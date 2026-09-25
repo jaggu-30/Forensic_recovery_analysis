@@ -1,22 +1,23 @@
-node_modules/
-dist/
-.env
-.env.*
-!.env.example
-
+# Python
 __pycache__/
-*.pyc
-.venv/
+*.py[cod]
+
+# Virtual environment
 venv/
+.venv/
 
-*.img
-*.dd
-*.raw
-*.bin
+# Environment variables
+.env
 
-data/sample/
-data/recovered/
+# IDE
+.vscode/
+.idea/
 
-*.log
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# OS
 .DS_Store
 Thumbs.db
