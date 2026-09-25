@@ -1,0 +1,593 @@
+﻿/* =========================================================
+   RECOVERAI 3D CYBER GLOBE INTRO
+   Royal Green + Cyber Blue
+   ========================================================= */
+
+.recoverai-intro {
+  --intro-blue: #2563eb;
+  --intro-cyan: #06b6d4;
+  --intro-green: #047857;
+  --intro-emerald: #10b981;
+  --intro-navy: #0f172a;
+  --intro-bg: #f4faf8;
+
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(37, 99, 235, 0.08),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 30% 70%,
+      rgba(16, 185, 129, 0.08),
+      transparent 32%
+    ),
+    var(--intro-bg);
+
+  color: var(--intro-navy);
+  overflow-x: hidden;
+}
+
+/* ---------------------------------------------------------
+   SCROLL SPACE
+--------------------------------------------------------- */
+
+.intro-scroll-space {
+  height: 360vh;
+  position: relative;
+}
+
+.intro-sticky {
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 46%,
+      rgba(6, 182, 212, 0.09),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #f8fcfb 0%,
+      #f2f8ff 52%,
+      #effaf6 100%
+    );
+}
+
+/* ---------------------------------------------------------
+   3D CANVAS
+--------------------------------------------------------- */
+
+.intro-canvas {
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+}
+
+.intro-canvas canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ---------------------------------------------------------
+   BRAND
+--------------------------------------------------------- */
+
+.intro-brand {
+  position: absolute;
+
+  top: 32px;
+  left: 42px;
+
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.intro-brand-mark {
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+  place-items: center;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--intro-blue),
+      var(--intro-green)
+    );
+
+  border-radius: 11px;
+
+  box-shadow:
+    0 10px 30px
+      rgba(37, 99, 235, 0.18),
+    0 8px 20px
+      rgba(4, 120, 87, 0.12);
+}
+
+.intro-brand strong {
+  display: block;
+
+  font-size: 15px;
+  font-weight: 850;
+
+  letter-spacing: 0.16em;
+
+  color: var(--intro-navy);
+}
+
+.intro-brand span {
+  display: block;
+
+  margin-top: 3px;
+
+  font-size: 8px;
+
+  letter-spacing: 0.18em;
+
+  color: #64748b;
+}
+
+/* ---------------------------------------------------------
+   INTRO COPY
+--------------------------------------------------------- */
+
+.intro-copy {
+  position: absolute;
+
+  left: 8%;
+  top: 50%;
+
+  z-index: 5;
+
+  width: 430px;
+
+  transform:
+    translateY(-50%);
+
+  transition:
+    opacity 0.45s ease,
+    transform 0.55s ease;
+}
+
+.intro-copy-hidden {
+  opacity: 0;
+
+  transform:
+    translateY(-60px);
+}
+
+.intro-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 7px 10px;
+
+  border-radius: 20px;
+
+  background:
+    rgba(37, 99, 235, 0.07);
+
+  border:
+    1px solid
+    rgba(37, 99, 235, 0.14);
+
+  color: var(--intro-blue);
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+}
+
+.intro-copy h1 {
+  margin: 22px 0 16px;
+
+  font-size: clamp(
+    48px,
+    5.3vw,
+    78px
+  );
+
+  line-height: 0.98;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 850;
+
+  color: var(--intro-navy);
+}
+
+.intro-copy h1 span {
+  background:
+    linear-gradient(
+      100deg,
+      var(--intro-blue),
+      var(--intro-cyan),
+      var(--intro-green)
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.intro-copy p {
+  max-width: 410px;
+
+  margin: 0;
+
+  color: #52657b;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+/* ---------------------------------------------------------
+   SCROLL INDICATOR
+--------------------------------------------------------- */
+
+.intro-scroll {
+  position: absolute;
+
+  bottom: 34px;
+  left: 50%;
+
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 5px;
+
+  transform:
+    translateX(-50%);
+
+  color: #64748b;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+.intro-scroll svg {
+  color: var(--intro-blue);
+
+  animation:
+    intro-bounce 1.5s
+    ease-in-out infinite;
+}
+
+.intro-scroll-hidden {
+  opacity: 0;
+
+  transform:
+    translate(-50%, 20px);
+}
+
+@keyframes intro-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(7px);
+  }
+}
+
+/* ---------------------------------------------------------
+   NAVIGATION HINT
+--------------------------------------------------------- */
+
+.globe-nav-hint {
+  position: absolute;
+
+  bottom: 34px;
+  right: 48px;
+
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #64748b;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+}
+
+.globe-nav-line {
+  width: 32px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--intro-blue),
+      var(--intro-green)
+    );
+}
+
+/* ---------------------------------------------------------
+   ENTER BUTTON
+--------------------------------------------------------- */
+
+.intro-enter {
+  position: absolute;
+
+  right: 45px;
+  top: 32px;
+
+  z-index: 20;
+
+  padding: 11px 16px;
+
+  border: 1px solid
+    rgba(37, 99, 235, 0.25);
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: var(--intro-blue);
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+  box-shadow:
+    0 10px 30px
+      rgba(15, 23, 42, 0.07);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.intro-enter:hover {
+  transform:
+    translateY(-2px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #f0faf7
+    );
+
+  box-shadow:
+    0 15px 35px
+      rgba(37, 99, 235, 0.14);
+}
+
+/* ---------------------------------------------------------
+   TRANSITION PANEL
+--------------------------------------------------------- */
+
+.intro-transition-panel {
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+
+  padding: 80px 30px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f4faf8,
+      #f1f6ff
+    );
+
+  opacity: 0;
+
+  transform:
+    translateY(40px);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.intro-transition-panel.visible {
+  opacity: 1;
+
+  transform:
+    translateY(0);
+}
+
+.intro-transition-panel > div {
+  max-width: 700px;
+}
+
+.intro-transition-panel span {
+  color: var(--intro-green);
+
+  font-size: 10px;
+
+  font-weight: 850;
+
+  letter-spacing: 0.18em;
+}
+
+.intro-transition-panel h2 {
+  margin: 15px 0;
+
+  color: var(--intro-navy);
+
+  font-size: clamp(
+    38px,
+    5vw,
+    64px
+  );
+
+  line-height: 1;
+
+  letter-spacing: -0.05em;
+}
+
+.intro-transition-panel p {
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.intro-primary {
+  margin-top: 22px;
+
+  padding: 13px 20px;
+
+  border: 0;
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      100deg,
+      var(--intro-blue),
+      var(--intro-green)
+    );
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.04em;
+
+  box-shadow:
+    0 12px 30px
+      rgba(37, 99, 235, 0.18);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.intro-primary:hover {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 18px 40px
+      rgba(4, 120, 87, 0.18);
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .intro-copy {
+    left: 5%;
+    width: 330px;
+  }
+
+  .intro-copy h1 {
+    font-size: 48px;
+  }
+
+  .intro-brand {
+    left: 22px;
+    top: 22px;
+  }
+
+  .intro-enter {
+    right: 22px;
+    top: 22px;
+  }
+}/* ==========================================================
+   RECOVERAI V2 â€” IMMERSIVE CYBER-EARTH INTRO
+   Append this block to the END of src/styles/globals.css
+   ========================================================== */
+:root{
+  --royal-green:#047857;
+  --emerald:#10B981;
+  --cyber-blue:#2563EB;
+  --cyan:#06B6D4;
+  --intro-bg:#f4fbf9;
+  --intro-ink:#0f172a;
+  --intro-muted:#5b7180;
+}
+
+.intro-page{min-height:520vh;background:var(--intro-bg);color:var(--intro-ink);overflow:clip}
+.intro-stage{height:420vh;position:relative}
+.intro-canvas-wrap{position:sticky;top:0;height:100vh;width:100%;overflow:hidden;background:radial-gradient(circle at 52% 44%,#ffffff 0,#effaf7 45%,#eaf6f3 100%)}
+.intro-canvas-wrap canvas{position:absolute!important;inset:0;width:100%!important;height:100%!important}
+.intro-vignette{position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 47%,transparent 42%,rgba(4,120,87,.035) 72%,rgba(15,23,42,.06) 100%);z-index:2}
+.intro-grid-lines{position:fixed;inset:0;pointer-events:none;z-index:3;opacity:.18;background-image:linear-gradient(rgba(37,99,235,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(4,120,87,.045) 1px,transparent 1px);background-size:80px 80px;mask-image:linear-gradient(to bottom,transparent 0,#000 22%,#000 78%,transparent 100%)}
+.intro-brand{position:fixed;left:44px;top:34px;z-index:8;display:flex;align-items:center;gap:12px;color:var(--intro-ink)}
+.intro-brand-mark{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,var(--cyber-blue),var(--royal-green));box-shadow:0 14px 35px rgba(37,99,235,.2)}
+.intro-brand strong{display:block;font:700 15px/1 Georgia,serif;letter-spacing:.2em}.intro-brand span{display:block;margin-top:5px;font:700 7px/1.1 Georgia,serif;letter-spacing:.2em;color:#78908d}
+.intro-copy{position:fixed;left:10.5vw;top:39%;z-index:7;max-width:400px;transition:opacity .1s linear,transform .1s linear}
+.intro-kicker{display:inline-flex;align-items:center;border:1px solid rgba(37,99,235,.2);background:rgba(255,255,255,.68);color:var(--cyber-blue);border-radius:999px;padding:7px 10px;font:800 8px/1 ui-monospace,monospace;letter-spacing:.13em;box-shadow:0 8px 24px rgba(15,23,42,.05)}
+.intro-copy h1{font:700 clamp(54px,6.2vw,92px)/.86 Georgia,serif;letter-spacing:-.055em;margin:25px 0 18px;color:#0f172a}.intro-copy h1 em{font-style:normal;background:linear-gradient(90deg,var(--cyber-blue),var(--cyan) 48%,var(--royal-green));-webkit-background-clip:text;background-clip:text;color:transparent}.intro-copy p{font:500 13px/1.7 Georgia,serif;color:#536b76;max-width:370px}.intro-rule{display:flex;align-items:center;gap:9px;margin-top:24px;color:#71858b;font:800 7px/1 ui-monospace,monospace;letter-spacing:.16em}.intro-rule i{width:38px;height:2px;background:linear-gradient(90deg,var(--cyber-blue),var(--emerald));border-radius:10px}
+.intro-scroll{position:fixed;z-index:7;left:50%;bottom:31px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;color:#66817e;font:800 7px/1 ui-monospace,monospace;letter-spacing:.2em;transition:opacity .1s linear}.intro-scroll svg{color:var(--royal-green);animation:introBounce 1.6s infinite}
+.intro-bottom{position:fixed;z-index:7;bottom:42px;left:50%;transform:translateX(-50%);display:flex;gap:12px;align-items:center;color:#69817f;font:800 7px/1 ui-monospace,monospace;letter-spacing:.18em;white-space:nowrap}.intro-bottom i{width:3px;height:3px;border-radius:50%;background:var(--cyber-blue)}
+.intro-nav{position:fixed;z-index:9;left:50%;top:31px;transform:translateX(-50%);width:min(1040px,calc(100vw - 120px));display:flex;align-items:center;justify-content:center;gap:13px;transition:opacity .16s linear,transform .16s linear;pointer-events:auto}.intro-nav-title{position:absolute;top:-18px;color:#78908d;font:800 6px/1 ui-monospace,monospace;letter-spacing:.22em}.intro-nav-items{display:flex;gap:5px;align-items:stretch;padding:5px;border:1px solid rgba(4,120,87,.13);background:rgba(255,255,255,.76);backdrop-filter:blur(18px);box-shadow:0 18px 50px rgba(15,23,42,.09);clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);border-radius:10px}
+.nav-fragment{position:relative;border:1px solid rgba(37,99,235,.1);background:#f8fffd;color:#355269;padding:12px 13px;min-width:105px;cursor:pointer;font:800 8px/1 ui-monospace,monospace;letter-spacing:.08em;transition:transform .2s,background .2s,color .2s,box-shadow .2s;clip-path:polygon(7px 0,100% 0,calc(100% - 7px) 100%,0 100%,0 7px)}
+.nav-fragment span{display:block;color:var(--cyber-blue);font-size:6px;margin-bottom:5px;opacity:.72}.nav-fragment:hover{transform:translateY(-4px);color:#fff;background:linear-gradient(135deg,var(--cyber-blue),var(--royal-green));box-shadow:0 10px 24px rgba(37,99,235,.2)}
+.n0{border-top-color:var(--cyber-blue)}.n1{border-top-color:var(--cyan)}.n2{border-top-color:var(--royal-green)}.n3{border-top-color:var(--emerald)}.n4{border-top-color:var(--cyber-blue)}.n5{border-top-color:var(--royal-green)}.n6{border-top-color:var(--cyan)}
+.intro-enter{position:fixed;z-index:9;right:42px;bottom:35px;display:flex;gap:9px;align-items:center;border:1px solid rgba(4,120,87,.2);background:#fff;color:#0f172a;padding:11px 15px;border-radius:999px;box-shadow:0 12px 30px rgba(15,23,42,.1);font:800 9px/1 ui-monospace,monospace;cursor:pointer}.intro-enter:hover{background:linear-gradient(135deg,var(--cyber-blue),var(--royal-green));color:#fff}
+.intro-transition{min-height:100vh;display:grid;place-items:center;padding:100px 8%;background:linear-gradient(180deg,#f4fbf9 0,#eef8f5 100%);border-top:1px solid #dbece8}.transition-inner{text-align:center;max-width:760px}.transition-inner h2{font:700 clamp(45px,6vw,80px)/.92 Georgia,serif;letter-spacing:-.05em;margin:20px 0;color:#0f172a}.transition-inner h2 em{font-style:normal;color:var(--royal-green)}.transition-inner p{max-width:560px;margin:0 auto 28px;color:#61767e;font:500 14px/1.7 Georgia,serif}.transition-inner button{border:0;color:#fff;background:linear-gradient(135deg,var(--cyber-blue),var(--royal-green));padding:13px 18px;border-radius:8px;font:800 10px/1 ui-monospace,monospace;letter-spacing:.08em;cursor:pointer;box-shadow:0 15px 30px rgba(37,99,235,.18)}
+@keyframes introBounce{50%{transform:translateY(5px)}}
+@media(max-width:1100px){.intro-copy{left:6vw}.intro-nav{width:calc(100vw - 40px)}.nav-fragment{min-width:82px;padding:10px 8px;font-size:7px}.intro-brand{left:22px}.intro-copy h1{font-size:64px}}
+@media(max-width:800px){.intro-copy{top:22%;left:7vw}.intro-copy h1{font-size:54px}.intro-copy p{max-width:300px}.intro-nav{top:auto;bottom:20px;width:94vw}.intro-nav-items{overflow:auto;max-width:100%;scrollbar-width:none}.intro-nav-items::-webkit-scrollbar{display:none}.nav-fragment{min-width:94px}.intro-bottom{display:none}.intro-enter{right:20px;bottom:92px}.intro-brand{top:20px}.intro-brand strong{font-size:13px}}
+/* RECOVERAI CYBER EARTH INTRO V3 */
+.cyber-intro{position:relative;min-height:430vh;background:#02070a;color:#e8fff9;overflow:clip}
+.cyber-intro-sticky{position:sticky;top:0;height:100vh;overflow:hidden;background:#02070a}
+.cyber-intro-sticky canvas{position:absolute!important;inset:0;width:100%!important;height:100%!important}
+.intro-overlay{position:absolute;inset:0;pointer-events:none;font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+.intro-brand{position:absolute;left:5.5vw;top:5vh;display:flex;align-items:center;gap:12px;pointer-events:auto;cursor:pointer;z-index:5}
+.intro-brand-mark{width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(16,185,129,.55);border-radius:12px;background:linear-gradient(135deg,rgba(37,99,235,.95),rgba(4,120,87,.9));box-shadow:0 0 35px rgba(6,182,212,.2)}
+.intro-brand span:last-child{display:flex;flex-direction:column;gap:2px}.intro-brand b{font-family:Georgia,serif;letter-spacing:.18em;font-size:15px}.intro-brand small{font-size:7px;letter-spacing:.22em;color:#71a69c}
+.intro-copy{position:absolute;left:8vw;top:32%;max-width:560px;transition:opacity .5s,transform .5s}.intro-copy-hide{opacity:0;transform:translateY(-35px);pointer-events:none}
+.intro-kicker{display:inline-flex;padding:7px 11px;border:1px solid rgba(6,182,212,.42);border-radius:999px;color:#67e8f9;font-size:9px;font-weight:700;letter-spacing:.18em;background:rgba(4,20,24,.55);backdrop-filter:blur(8px)}
+.intro-copy h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(58px,7vw,112px);line-height:.88;letter-spacing:-.055em;margin:24px 0;color:#effffb;font-weight:500;text-shadow:0 0 40px rgba(6,182,212,.08)}
+.intro-copy h1 em{font-style:normal;background:linear-gradient(100deg,#60a5fa,#06b6d4,#10b981);background-clip:text;-webkit-background-clip:text;color:transparent}.intro-copy p{font-size:14px;color:#8eb9b0;letter-spacing:.02em;max-width:420px;line-height:1.7}
+.intro-stage-label{position:absolute;right:8vw;bottom:12vh;text-align:right;transition:opacity .4s}.intro-stage-label.fade{opacity:.2}.intro-stage-label span{display:block;color:#d7fff5;font-size:10px;letter-spacing:.28em}.intro-stage-label small{display:block;margin-top:8px;color:#3d8f83;font-size:8px;letter-spacing:.24em}
+.intro-scroll{position:absolute;bottom:4vh;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;flex-direction:column;color:#5da99d;font-size:8px;letter-spacing:.25em}.intro-scroll svg{color:#06b6d4;animation:intro-bounce 1.7s infinite}@keyframes intro-bounce{50%{transform:translateY(6px)}}
+.intro-nav-hint{position:absolute;left:50%;top:9vh;transform:translate(-50%,-20px);font-size:8px;letter-spacing:.2em;color:#4e9c91;opacity:0;transition:.7s}.intro-nav-hint.visible{opacity:1;transform:translate(-50%,0)}.intro-nav-hint span{color:#06b6d4;margin-right:8px}
+.intro-progress{position:absolute;left:0;right:0;bottom:0;height:2px;background:rgba(16,185,129,.08)}.intro-progress span{display:block;height:100%;transform-origin:left;background:linear-gradient(90deg,#2563eb,#06b6d4,#10b981);box-shadow:0 0 18px #06b6d4}
+.cyber-scroll-space{height:330vh}
+@media(max-width:900px){.intro-copy{left:7vw;top:22%}.intro-copy h1{font-size:58px}.intro-stage-label{right:6vw}.intro-brand{left:5vw}.intro-nav-hint{display:none}}
+@media(prefers-reduced-motion:reduce){.intro-scroll svg{animation:none}.cyber-intro{min-height:100vh}.cyber-scroll-space{height:0}}

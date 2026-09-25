@@ -15,9 +15,8 @@ function Scene({ progress, navigate }) {
       <ambientLight intensity={0.22} />
       <pointLight position={[4,3,6]} intensity={16} color="#22d3ee" />
       <pointLight position={[-4,-2,3]} intensity={12} color="#10b981" />
-      <Stars radius={90} depth={65} count={7200} factor={2.2} saturation={0.15} fade speed={0.22} />
-      <Sparkles count={850} scale={[20,16,16]} size={2.2} speed={0.12} color="#7dd3fc" opacity={0.55} />
-      <Stars radius={65} depth={40} count={2200} factor={3.2} saturation={0.1} fade speed={0.05} />
+      <Stars radius={90} depth={65} count={3400} factor={1.45} saturation={0.15} fade speed={0.22} />
+      <Sparkles count={280} scale={[18,14,14]} size={1.2} speed={0.16} color="#67e8f9" opacity={0.34} />
       <CyberGlobe progress={progress} />
       <GlobeFragments progress={progress} navigate={navigate} />
     </Canvas>
