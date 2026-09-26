@@ -1,0 +1,13 @@
+{
+  "benchmark": true,
+  "source": "CONTROLLED_BENCHMARK",
+  "original_video": "recoverai_cat_test.mp4",
+  "corrupted_video": "recoverai_cat_corrupted.mp4",
+  "total_frames": 120,
+  "damaged_frame_start": 40,
+  "damaged_frame_end": 55,
+  "damaged_frames": 16,
+  "damage_type": "VISUAL_PIXEL_CORRUPTION",
+  "reconstruction_method": "TEMPORAL_NEIGHBOUR_INTERPOLATION",
+  "warning": "These damaged-frame indices are controlled benchmark ground truth and must not be represented as independently inferred forensic findings."
+}

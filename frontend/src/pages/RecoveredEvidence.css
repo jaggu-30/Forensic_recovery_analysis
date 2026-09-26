@@ -1,0 +1,263 @@
+.recovered-evidence-page .toolbar {
+  flex-wrap: wrap;
+}
+
+.recovered-download {
+  text-decoration: none;
+}
+
+.ground-truth-notice,
+.analysis-error {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.ground-truth-notice {
+  border: 1px solid rgba(56, 189, 248, 0.32);
+  background: rgba(14, 92, 134, 0.15);
+  color: #bde9ff;
+}
+
+.ground-truth-notice svg {
+  color: #67e8f9;
+  flex: 0 0 auto;
+}
+
+.ground-truth-notice b,
+.analysis-error b {
+  display: block;
+  margin-bottom: 4px;
+  color: #e7eef8;
+}
+
+.ground-truth-notice p,
+.analysis-error p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.analysis-error {
+  border: 1px solid rgba(248, 113, 113, 0.38);
+  background: rgba(127, 29, 29, 0.22);
+  color: #fecaca;
+}
+
+.analysis-error svg {
+  color: #fca5a5;
+  flex: 0 0 auto;
+}
+
+.analysis-error small {
+  display: block;
+  margin-top: 5px;
+  color: #fca5a5;
+}
+
+.evidence-workspace {
+  width: 100%;
+}
+
+.evidence-workspace.with-copilot {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  align-items: start;
+  gap: 18px;
+}
+
+.evidence-main {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.evidence-table-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 19px 12px;
+}
+
+.evidence-table-heading h3 {
+  margin: 5px 0 0;
+  color: #e7eef8;
+  font-size: 15px;
+}
+
+.hash-cell {
+  max-width: 220px;
+  overflow: hidden;
+  color: #8ecae6;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 9px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recovery-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.comparison-fact {
+  display: grid;
+  gap: 7px;
+  min-height: 142px;
+  padding: 15px;
+  border: 1px solid #1d2d42;
+  border-radius: 9px;
+  background: #081523;
+}
+
+.comparison-fact svg {
+  color: #8da0b7;
+}
+
+.comparison-fact span {
+  color: #8da0b7;
+  font-size: 10px;
+}
+
+.comparison-fact b {
+  color: #e7eef8;
+  font-size: 18px;
+}
+
+.comparison-fact small {
+  color: #6f829a;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.comparison-fact.verified {
+  border-color: rgba(34, 197, 94, 0.35);
+}
+
+.comparison-fact.verified svg,
+.evidence-metric b.green {
+  color: #4ade80;
+}
+
+.comparison-fact.damaged {
+  border-color: rgba(239, 68, 68, 0.35);
+}
+
+.comparison-fact.damaged svg,
+.evidence-metric b.red {
+  color: #f87171;
+}
+
+.comparison-fact.uncertain {
+  border-color: rgba(245, 158, 11, 0.35);
+}
+
+.comparison-fact.uncertain svg,
+.evidence-metric b.amber {
+  color: #fbbf24;
+}
+
+.comparison-summary,
+.dna-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.dna-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0;
+}
+
+.evidence-metric {
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid #17283b;
+  border-radius: 7px;
+  background: #081523;
+}
+
+.evidence-metric span {
+  display: block;
+  overflow: hidden;
+  color: #6f829a;
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.evidence-metric b {
+  display: block;
+  overflow: hidden;
+  margin-top: 7px;
+  color: #e7eef8;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.evidence-metric b.cyan {
+  color: #67e8f9;
+}
+
+.forensic-limit {
+  margin: 14px 0 0;
+  color: #8da0b7;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.validation-list {
+  display: grid;
+  gap: 8px;
+}
+
+.validation-list div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 0;
+  border-bottom: 1px solid #17283b;
+  color: #b9c8d8;
+  font-size: 10px;
+}
+
+.validation-list div:last-child {
+  border-bottom: 0;
+}
+
+.validation-list svg {
+  color: #4ade80;
+}
+
+.copilot-open-button {
+  position: sticky;
+  top: 105px;
+}
+
+@media (max-width: 1280px) {
+  .evidence-workspace.with-copilot {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-copilot {
+    position: static;
+    height: 620px;
+    max-height: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .comparison-summary,
+  .dna-list {
+    grid-template-columns: 1fr;
+  }
+}

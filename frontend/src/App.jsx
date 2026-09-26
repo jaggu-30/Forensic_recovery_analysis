@@ -31,9 +31,9 @@ import InvestigationReport from "./pages/InvestigationReport";
 
 const nav = [
   ["/dashboard", "Dashboard", LayoutDashboard],
-  ["/investigation/new", "New Investigation", UploadCloud],
+  ["/new-investigation", "New Investigation", UploadCloud],
   ["/analysis", "Recovery Analysis", ScanSearch],
-  ["/reconstruction", "Fragment Reconstruction", Network],
+  ["/fragments", "Fragment Reconstruction", Network],
   ["/evidence", "Recovered Evidence", Database],
   ["/report", "Investigation Report", FileText],
 ];
@@ -112,7 +112,7 @@ function AppShell() {
           </div>
 
           <div className="sidebar-version">
-            RECOVERAI v0.1 • DEMO MODE
+            RECOVERAI v0.1 • FORENSIC PLATFORM
           </div>
 
         </div>
@@ -155,7 +155,7 @@ function AppShell() {
 
   <div className="mode-pill">
     <span className="status-dot" />
-    DEMO DATA
+    LIVE EVIDENCE
   </div>
 </div>
 
@@ -171,6 +171,11 @@ function AppShell() {
             />
 
             <Route
+              path="/new-investigation"
+              element={<NewInvestigation />}
+            />
+
+            <Route
               path="/investigation/new"
               element={<NewInvestigation />}
             />
@@ -178,6 +183,11 @@ function AppShell() {
             <Route
               path="/analysis"
               element={<RecoveryAnalysis />}
+            />
+
+            <Route
+              path="/fragments"
+              element={<FragmentReconstruction />}
             />
 
             <Route

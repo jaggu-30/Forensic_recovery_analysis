@@ -1,0 +1,18 @@
+{
+  "filename": "recoverai_corrupted_cat_5s.mp4",
+  "duration_seconds": 5,
+  "fps": 24,
+  "total_frames": 120,
+  "controlled_damage": true,
+  "damaged_frame_ranges": [
+    {
+      "start": 48,
+      "end": 72
+    },
+    {
+      "start": 91,
+      "end": 111
+    }
+  ],
+  "note": "Synthetic benchmark corruption created by RECOVERAI for testing; damaged ranges are ground truth, not independently inferred forensic findings."
+}

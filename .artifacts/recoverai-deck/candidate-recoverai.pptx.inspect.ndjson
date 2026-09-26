@@ -1,0 +1,208 @@
+{"kind":"deck","id":"pr/et1ex9","name":"Deck"}
+{"kind":"layout","layoutId":"736e2161-92ec-4209-8b27-50fb5a5a1f7c","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"ae7dc22b-8c80-4f66-a628-d3fcf68a4ebd","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/vde9pp","slide":1,"title":"RECOVERAI","textShapes":4}
+{"kind":"shape","id":"sh/h4jehszm","slide":1,"bbox":[0,0,730,720]}
+{"kind":"shape","id":"sh/gjad8nyh","slide":1,"bbox":[68,170,6,256]}
+{"kind":"textbox","id":"sh/7ehwbyhk","slide":1,"text":"RECOVERAI","textPreview":"RECOVERAI","textChars":9,"textLines":1,"bbox":[104,164,510,68]}
+{"kind":"textbox","id":"sh/6d8v2dgz","slide":1,"text":"AI-Assisted Intelligent Data Recovery\nand Digital Evidence Reconstruction","textPreview":"AI-Assisted Intelligent Data Recovery | and Digital Evidence Reconstruction","textChars":73,"textLines":2,"bbox":[106,244,530,108]}
+{"kind":"textbox","id":"sh/tgzed8zq","slide":1,"text":"Cybersecurity & AI track  |  CALMSTACKS 24H Hackathon","textPreview":"Cybersecurity & AI track  |  CALMSTACKS 24H Hackathon","textChars":53,"textLines":1,"bbox":[106,382,520,26]}
+{"kind":"textbox","id":"sh/8fqd43y5","slide":1,"text":"A forensic recovery prototype that makes its evidence limits visible.","textPreview":"A forensic recovery prototype that makes its evidence limits visible.","textChars":69,"textLines":1,"bbox":[106,522,500,50]}
+{"kind":"image","id":"im/nil0byx0","slide":1,"name":"","alt":"Abstract digital Earth and forensic evidence signals","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/vde9pp","slide":1,"text":"Cover illustration generated with OpenAI ImageGen for this presentation. All technical facts come from the local RECOVERAI benchmark metadata and source code."}
+{"kind":"slide","id":"sl/zixt3w","slide":2,"title":"Recovery evidence needs a trust boundary","textShapes":11}
+{"kind":"textbox","id":"sh/7i5czyd0","slide":2,"text":"Recovery evidence needs a trust boundary","textPreview":"Recovery evidence needs a trust boundary","textChars":40,"textLines":1,"bbox":[68,48,880,52]}
+{"kind":"textbox","id":"sh/sjeds3ul","slide":2,"text":"Deleted or damaged bytes are not automatically recoverable evidence","textPreview":"Deleted or damaged bytes are not automatically recoverable evidence","textChars":67,"textLines":1,"bbox":[70,103,900,28]}
+{"kind":"shape","id":"sh/tknu18v6","slide":2,"bbox":[68,137,1144,0]}
+{"kind":"textbox","id":"sh/itcbm9wj","slide":2,"text":"Traditional recovery tools often stop at file retrieval. Investigators still need to know whether fragments belong together, what is missing, and whether an output can be trusted.","textPreview":"Traditional recovery tools often stop at file retrieval. Investigators still need to know whether fragments belong together, what is miss...","textChars":179,"textLines":1,"bbox":[70,176,650,92]}
+{"kind":"shape","id":"sh/julcved4","slide":2,"bbox":[740,178,0,382]}
+{"kind":"shape","id":"sh/kvedoje9","slide":2,"bbox":[800,188,12,72]}
+{"kind":"textbox","id":"sh/5wnuxovu","slide":2,"text":"Identify","textPreview":"Identify","textChars":8,"textLines":1,"bbox":[840,188,260,30]}
+{"kind":"textbox","id":"sh/2pgvydcn","slide":2,"text":"Signatures, structure, entropy and block-level evidence","textPreview":"Signatures, structure, entropy and block-level evidence","textChars":55,"textLines":1,"bbox":[840,223,330,42]}
+{"kind":"shape","id":"sh/3qpc7id8","slide":2,"bbox":[800,310,12,72]}
+{"kind":"textbox","id":"sh/bmd4jedk","slide":2,"text":"Relate","textPreview":"Relate","textChars":6,"textLines":1,"bbox":[840,310,260,30]}
+{"kind":"textbox","id":"sh/al4nq9wz","slide":2,"text":"Neighbor offsets, compatible file type and fragment features","textPreview":"Neighbor offsets, compatible file type and fragment features","textChars":60,"textLines":1,"bbox":[840,345,330,42]}
+{"kind":"shape","id":"sh/x8vmlova","slide":2,"bbox":[800,432,12,72]}
+{"kind":"textbox","id":"sh/wnm5sjep","slide":2,"text":"Decide","textPreview":"Decide","textChars":6,"textLines":1,"bbox":[840,432,260,30]}
+{"kind":"textbox","id":"sh/jaxonydg","slide":2,"text":"Verified recovery only when independent bytes support it","textPreview":"Verified recovery only when independent bytes support it","textChars":56,"textLines":1,"bbox":[840,467,330,42]}
+{"kind":"textbox","id":"sh/y94nutwv","slide":2,"text":"Core rule: missing bytes remain missing until a trusted source verifies them.","textPreview":"Core rule: missing bytes remain missing until a trusted source verifies them.","textChars":77,"textLines":1,"bbox":[70,485,600,56]}
+{"kind":"textbox","id":"sh/lcf6p8vm","slide":2,"text":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  02","textPreview":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  02","textChars":45,"textLines":1,"bbox":[68,682,780,20]}
+{"kind":"notes","id":"nt/zixt3w","slide":2,"text":"Problem framing comes from the official CALMSTACKS problem statement supplied with this project."}
+{"kind":"slide","id":"sl/qboxhm","slide":3,"title":"Evidence analysis pipeline","textShapes":22}
+{"kind":"textbox","id":"sh/72pgbahc","slide":3,"text":"Evidence analysis pipeline","textPreview":"Evidence analysis pipeline","textChars":26,"textLines":1,"bbox":[68,48,880,52]}
+{"kind":"textbox","id":"sh/83yx4fix","slide":3,"text":"Each stage stores concrete facts that investigators can inspect","textPreview":"Each stage stores concrete facts that investigators can inspect","textChars":63,"textLines":1,"bbox":[70,103,900,28]}
+{"kind":"shape","id":"sh/to7ydkzi","slide":3,"bbox":[68,137,1144,0]}
+{"kind":"shape","id":"sh/yxwfy50v","slide":3,"bbox":[70,260,150,178]}
+{"kind":"textbox","id":"sh/jy5g7ahg","slide":3,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[88,278,36,26]}
+{"kind":"textbox","id":"sh/kzex0fil","slide":3,"text":"Upload","textPreview":"Upload","textChars":6,"textLines":1,"bbox":[88,318,116,32]}
+{"kind":"textbox","id":"sh/l0ny9kz6","slide":3,"text":"SHA-256\nprovenance","textPreview":"SHA-256 | provenance","textChars":18,"textLines":2,"bbox":[88,362,116,48]}
+{"kind":"shape","id":"sh/it0zap0z","slide":3,"bbox":[220,349,42,0]}
+{"kind":"shape","id":"sh/3u9gjuhk","slide":3,"bbox":[262,260,150,178]}
+{"kind":"textbox","id":"sh/vy5cby5k","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[280,278,36,26]}
+{"kind":"textbox","id":"sh/axwb2toz","slide":3,"text":"Scan","textPreview":"Scan","textChars":4,"textLines":1,"bbox":[280,318,116,32]}
+{"kind":"textbox","id":"sh/x07ud8na","slide":3,"text":"signatures\nstructure","textPreview":"signatures | structure","textChars":20,"textLines":2,"bbox":[280,362,116,48]}
+{"kind":"shape","id":"sh/wzyt436p","slide":3,"bbox":[412,349,42,0]}
+{"kind":"shape","id":"sh/j2pcfi5g","slide":3,"bbox":[454,260,150,178]}
+{"kind":"textbox","id":"sh/i1gb6dov","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[472,278,36,26]}
+{"kind":"textbox","id":"sh/547uhsnm","slide":3,"text":"Fragments","textPreview":"Fragments","textChars":9,"textLines":1,"bbox":[472,318,116,32]}
+{"kind":"textbox","id":"sh/k3yt8n61","slide":3,"text":"4 KiB blocks\nentropy","textPreview":"4 KiB blocks | entropy","textChars":20,"textLines":2,"bbox":[472,362,116,48]}
+{"kind":"shape","id":"sh/76pcji5s","slide":3,"bbox":[604,349,42,0]}
+{"kind":"shape","id":"sh/65gbado7","slide":3,"bbox":[646,260,150,178]}
+{"kind":"textbox","id":"sh/21kf2h8f","slide":3,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[664,278,36,26]}
+{"kind":"textbox","id":"sh/3mtwbmp0","slide":3,"text":"Relations","textPreview":"Relations","textChars":9,"textLines":1,"bbox":[664,318,116,32]}
+{"kind":"textbox","id":"sh/4n2x4rq5","slide":3,"text":"offsets\ncompatibility","textPreview":"offsets | compatibility","textChars":21,"textLines":2,"bbox":[664,362,116,48]}
+{"kind":"shape","id":"sh/pobedw7q","slide":3,"bbox":[796,349,42,0]}
+{"kind":"shape","id":"sh/ux0fyh83","slide":3,"bbox":[838,260,150,178]}
+{"kind":"textbox","id":"sh/fy9w7mpo","slide":3,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[856,278,36,26]}
+{"kind":"textbox","id":"sh/gz2x0rq9","slide":3,"text":"Feasibility","textPreview":"Feasibility","textChars":11,"textLines":1,"bbox":[856,318,116,32]}
+{"kind":"textbox","id":"sh/h0be9c7u","slide":3,"text":"damage\nconfidence","textPreview":"damage | confidence","textChars":17,"textLines":2,"bbox":[856,362,116,48]}
+{"kind":"shape","id":"sh/yt4fa1on","slide":3,"bbox":[988,349,42,0]}
+{"kind":"shape","id":"sh/zudgj6ps","slide":3,"bbox":[1030,260,150,178]}
+{"kind":"textbox","id":"sh/9ofi90ra","slide":3,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1048,278,36,26]}
+{"kind":"textbox","id":"sh/8n6hgvap","slide":3,"text":"Validation","textPreview":"Validation","textChars":10,"textLines":1,"bbox":[1048,318,116,32]}
+{"kind":"textbox","id":"sh/nmx07a94","slide":3,"text":"verified\nartifact","textPreview":"verified | artifact","textChars":17,"textLines":2,"bbox":[1048,362,116,48]}
+{"kind":"textbox","id":"sh/mloze5sj","slide":3,"text":"The client renders backend results. No dashboard metric substitutes a backend analysis record.","textPreview":"The client renders backend results. No dashboard metric substitutes a backend analysis record.","textChars":94,"textLines":1,"bbox":[166,525,950,34]}
+{"kind":"textbox","id":"sh/lkfi50ry","slide":3,"text":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  03","textPreview":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  03","textChars":45,"textLines":1,"bbox":[68,682,780,20]}
+{"kind":"notes","id":"nt/qboxhm","slide":3,"text":"Pipeline labels reflect the implemented FastAPI analysis and reconstruction endpoints in the local project."}
+{"kind":"slide","id":"sl/wu3lym","slide":4,"title":"Explainable fragment intelligence","textShapes":16}
+{"kind":"textbox","id":"sh/1cbm1ov6","slide":4,"text":"Explainable fragment intelligence","textPreview":"Explainable fragment intelligence","textChars":33,"textLines":1,"bbox":[68,48,880,52]}
+{"kind":"textbox","id":"sh/e9kn69wv","slide":4,"text":"Observed features produce evidence-compatible classifications and graph candidates","textPreview":"Observed features produce evidence-compatible classifications and graph candidates","textChars":82,"textLines":1,"bbox":[70,103,900,28]}
+{"kind":"shape","id":"sh/fat4zedg","slide":4,"bbox":[68,137,1144,0]}
+{"kind":"shape","id":"sh/of25c3ex","slide":4,"bbox":[74,200,300,290]}
+{"kind":"textbox","id":"sh/pgvm5ovi","slide":4,"text":"Observed block features","textPreview":"Observed block features","textChars":23,"textLines":1,"bbox":[100,225,240,34]}
+{"kind":"shape","id":"sh/2dknatwr","slide":4,"bbox":[104,293,10,10]}
+{"kind":"textbox","id":"sh/3et43ydc","slide":4,"text":"Validated signature","textPreview":"Validated signature","textChars":19,"textLines":1,"bbox":[124,285,240,26]}
+{"kind":"shape","id":"sh/4ji50zet","slide":4,"bbox":[104,343,10,10]}
+{"kind":"textbox","id":"sh/5krmt4fy","slide":4,"text":"Shannon entropy","textPreview":"Shannon entropy","textChars":15,"textLines":1,"bbox":[124,335,240,26]}
+{"kind":"shape","id":"sh/d4f2lg7i","slide":4,"bbox":[104,393,10,10]}
+{"kind":"textbox","id":"sh/s361sbqx","slide":4,"text":"Byte composition","textPreview":"Byte composition","textChars":16,"textLines":1,"bbox":[124,385,240,26]}
+{"kind":"shape","id":"sh/r2xkj6pc","slide":4,"bbox":[104,443,10,10]}
+{"kind":"textbox","id":"sh/qhojq18r","slide":4,"text":"Structural markers","textPreview":"Structural markers","textChars":18,"textLines":1,"bbox":[124,435,240,26]}
+{"kind":"shape","id":"sh/18z2pg7e","slide":4,"bbox":[486,232,310,225]}
+{"kind":"textbox","id":"sh/07q1wvqt","slide":4,"text":"Feature model","textPreview":"Feature model","textChars":13,"textLines":1,"bbox":[520,265,240,36]}
+{"kind":"textbox","id":"sh/f6xknqp8","slide":4,"text":"Classification\nconfidence score\nfragment hash","textPreview":"Classification | confidence score | fragment hash","textChars":45,"textLines":3,"bbox":[520,320,230,96]}
+{"kind":"shape","id":"sh/e5ojul8n","slide":4,"bbox":[910,200,290,290]}
+{"kind":"textbox","id":"sh/pcz2t07a","slide":4,"text":"Relationship candidate","textPreview":"Relationship candidate","textChars":22,"textLines":1,"bbox":[938,225,232,34]}
+{"kind":"shape","id":"sh/obq10v65","slide":4,"bbox":[940,296,10,10]}
+{"kind":"textbox","id":"sh/8ridc3id","slide":4,"text":"Offset continuity  40%","textPreview":"Offset continuity  40%","textChars":22,"textLines":1,"bbox":[960,288,240,26]}
+{"kind":"shape","id":"sh/9srul8jy","slide":4,"bbox":[940,346,10,10]}
+{"kind":"textbox","id":"sh/mp0vat07","slide":4,"text":"Type match  25%","textPreview":"Type match  25%","textChars":15,"textLines":1,"bbox":[960,338,240,26]}
+{"kind":"shape","id":"sh/7q9cjy1s","slide":4,"bbox":[940,396,10,10]}
+{"kind":"textbox","id":"sh/wfidg3ip","slide":4,"text":"Entropy match  20%","textPreview":"Entropy match  20%","textChars":18,"textLines":1,"bbox":[960,388,240,26]}
+{"kind":"shape","id":"sh/hgbup8ju","slide":4,"bbox":[940,446,10,10]}
+{"kind":"textbox","id":"sh/ut0ved0j","slide":4,"text":"Class match  15%","textPreview":"Class match  15%","textChars":16,"textLines":1,"bbox":[960,438,240,26]}
+{"kind":"shape","id":"sh/vu9cni14","slide":4,"bbox":[376,346,108,0]}
+{"kind":"shape","id":"sh/czyd4ji5","slide":4,"bbox":[798,346,110,0]}
+{"kind":"textbox","id":"sh/xk7udojq","slide":4,"text":"Scores describe compatibility. They never prove original file membership.","textPreview":"Scores describe compatibility. They never prove original file membership.","textChars":73,"textLines":1,"bbox":[312,550,680,32]}
+{"kind":"textbox","id":"sh/fedgjml8","slide":4,"text":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  04","textPreview":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  04","textChars":45,"textLines":1,"bbox":[68,682,780,20]}
+{"kind":"notes","id":"nt/wu3lym","slide":4,"text":"Weights: physical offset continuity 40%, type compatibility 25%, entropy similarity 20%, classification compatibility 15%. Source: backend/app/ai/relationship_engine.py."}
+{"kind":"slide","id":"sl/tfu0zq","slide":5,"title":"Controlled benchmark recovery","textShapes":12}
+{"kind":"textbox","id":"sh/sr2x8vy9","slide":5,"text":"Controlled benchmark recovery","textPreview":"Controlled benchmark recovery","textChars":29,"textLines":1,"bbox":[68,48,880,52]}
+{"kind":"textbox","id":"sh/7qtgzqxo","slide":5,"text":"A 4,096-byte removal creates a known test condition for byte-level verification","textPreview":"A 4,096-byte removal creates a known test condition for byte-level verification","textChars":79,"textLines":1,"bbox":[70,103,900,28]}
+{"kind":"shape","id":"sh/6pkf6lg3","slide":5,"bbox":[68,137,1144,0]}
+{"kind":"shape","id":"sh/hgvy50fq","slide":5,"bbox":[74,244,224,190]}
+{"kind":"shape","id":"sh/gvmxcvy5","slide":5,"bbox":[98,267,10,10]}
+{"kind":"textbox","id":"sh/fudg3qx0","slide":5,"text":"Original PDF","textPreview":"Original PDF","textChars":12,"textLines":1,"bbox":[122,254,148,38]}
+{"kind":"textbox","id":"sh/ut4fa5gf","slide":5,"text":"192,071 bytes","textPreview":"192,071 bytes","textChars":13,"textLines":1,"bbox":[98,327,175,62]}
+{"kind":"shape","id":"sh/xkretgfm","slide":5,"bbox":[299,338,60,0]}
+{"kind":"shape","id":"sh/wzix0by1","slide":5,"bbox":[360,244,224,190]}
+{"kind":"shape","id":"sh/y9grq9gv","slide":5,"bbox":[384,267,10,10]}
+{"kind":"textbox","id":"sh/zup8jehg","slide":5,"text":"Controlled damage","textPreview":"Controlled damage","textChars":17,"textLines":1,"bbox":[408,254,148,38]}
+{"kind":"textbox","id":"sh/0vi9sjyl","slide":5,"text":"4,096 bytes removed\noffsets 90,000–94,095","textPreview":"4,096 bytes removed | offsets 90,000–94,095","textChars":41,"textLines":2,"bbox":[384,327,175,62]}
+{"kind":"shape","id":"sh/lwrqloz6","slide":5,"bbox":[585,338,60,0]}
+{"kind":"shape","id":"sh/mx0rutgr","slide":5,"bbox":[646,244,224,190]}
+{"kind":"shape","id":"sh/ny98nyhc","slide":5,"bbox":[670,267,10,10]}
+{"kind":"textbox","id":"sh/8zi9wjyx","slide":5,"text":"Damaged input","textPreview":"Damaged input","textChars":13,"textLines":1,"bbox":[694,254,148,38]}
+{"kind":"textbox","id":"sh/90rqpozi","slide":5,"text":"187,975 bytes","textPreview":"187,975 bytes","textChars":13,"textLines":1,"bbox":[670,327,175,62]}
+{"kind":"shape","id":"sh/a10ritg3","slide":5,"bbox":[871,338,60,0]}
+{"kind":"shape","id":"sh/v298ryh8","slide":5,"bbox":[932,244,224,190]}
+{"kind":"shape","id":"sh/76t8fydg","slide":5,"bbox":[956,267,10,10]}
+{"kind":"textbox","id":"sh/65k76twv","slide":5,"text":"Recovered artifact","textPreview":"Recovered artifact","textChars":18,"textLines":1,"bbox":[980,254,148,38]}
+{"kind":"textbox","id":"sh/tsbqh8vm","slide":5,"text":"192,071 bytes\nSHA-256 match","textPreview":"192,071 bytes | SHA-256 match","textChars":27,"textLines":2,"bbox":[956,327,175,62]}
+{"kind":"textbox","id":"sh/s72p83e1","slide":5,"text":"Ground truth notice: RECOVERAI recognizes this test only by exact damaged-file SHA-256. The benchmark source supplies the missing bytes and the output must match the trusted original hash.","textPreview":"Ground truth notice: RECOVERAI recognizes this test only by exact damaged-file SHA-256. The benchmark source supplies the missing bytes a...","textChars":188,"textLines":1,"bbox":[92,518,1085,52]}
+{"kind":"textbox","id":"sh/j298byxk","slide":5,"text":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  05","textPreview":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  05","textChars":45,"textLines":1,"bbox":[68,682,780,20]}
+{"kind":"notes","id":"nt/tfu0zq","slide":5,"text":"Benchmark facts: data/benchmark/damaged/damage_metadata.json. The app explicitly labels this source GROUND_TRUTH and does not present it as independent forensic discovery."}
+{"kind":"slide","id":"sl/uufc2c","slide":6,"title":"Verification boundary and recovery states","textShapes":15}
+{"kind":"textbox","id":"sh/8vuhgv6l","slide":6,"text":"Verification boundary and recovery states","textPreview":"Verification boundary and recovery states","textChars":41,"textLines":1,"bbox":[68,48,880,52]}
+{"kind":"textbox","id":"sh/7ul0nq50","slide":6,"text":"The product separates assessable damage from bytes that can be defended as recovered","textPreview":"The product separates assessable damage from bytes that can be defended as recovered","textChars":84,"textLines":1,"bbox":[70,103,900,28]}
+{"kind":"shape","id":"sh/mtczelof","slide":6,"bbox":[68,137,1144,0]}
+{"kind":"shape","id":"sh/hknit0n2","slide":6,"bbox":[76,184,268,52]}
+{"kind":"textbox","id":"sh/wjehkv6h","slide":6,"text":"VERIFIED RECOVERY","textPreview":"VERIFIED RECOVERY","textChars":17,"textLines":1,"bbox":[92,197,238,25]}
+{"kind":"textbox","id":"sh/vy50rq5w","slide":6,"text":"Independent source plus SHA-256 match","textPreview":"Independent source plus SHA-256 match","textChars":37,"textLines":1,"bbox":[386,191,440,50]}
+{"kind":"shape","id":"sh/uxwzi5ob","slide":6,"bbox":[76,266,268,52]}
+{"kind":"textbox","id":"sh/xojyhgny","slide":6,"text":"STRUCTURAL REPAIR","textPreview":"STRUCTURAL REPAIR","textChars":17,"textLines":1,"bbox":[92,279,238,25]}
+{"kind":"textbox","id":"sh/c3ah8b6d","slide":6,"text":"Format structure can be assessed, but bytes remain unavailable","textPreview":"Format structure can be assessed, but bytes remain unavailable","textChars":62,"textLines":1,"bbox":[386,273,440,50]}
+{"kind":"shape","id":"sh/i5ofyto7","slide":6,"bbox":[76,348,268,52]}
+{"kind":"textbox","id":"sh/j6xwryps","slide":6,"text":"PLAUSIBLE RECONSTRUCTION","textPreview":"PLAUSIBLE RECONSTRUCTION","textChars":24,"textLines":1,"bbox":[92,361,238,25]}
+{"kind":"textbox","id":"sh/476x036d","slide":6,"text":"Evidence supports a limited hypothesis, not original bytes","textPreview":"Evidence supports a limited hypothesis, not original bytes","textChars":58,"textLines":1,"bbox":[386,355,440,50]}
+{"kind":"shape","id":"sh/58fet87y","slide":6,"bbox":[76,430,268,52]}
+{"kind":"textbox","id":"sh/69of2do3","slide":6,"text":"AI-INFERRED RECONSTRUCTION","textPreview":"AI-INFERRED RECONSTRUCTION","textChars":26,"textLines":1,"bbox":[92,443,238,25]}
+{"kind":"textbox","id":"sh/raxgvi5o","slide":6,"text":"Experimental inference must be labelled and cannot claim original evidence","textPreview":"Experimental inference must be labelled and cannot claim original evidence","textChars":74,"textLines":1,"bbox":[386,437,440,50]}
+{"kind":"shape","id":"sh/sbqx4369","slide":6,"bbox":[76,512,268,52]}
+{"kind":"textbox","id":"sh/tczyx8nu","slide":6,"text":"INSUFFICIENT EVIDENCE","textPreview":"INSUFFICIENT EVIDENCE","textChars":21,"textLines":1,"bbox":[92,525,238,25]}
+{"kind":"textbox","id":"sh/ex8f6dof","slide":6,"text":"No supported original-byte output and no download","textPreview":"No supported original-byte output and no download","textChars":49,"textLines":1,"bbox":[386,519,440,50]}
+{"kind":"textbox","id":"sh/fyhgzi50","slide":6,"text":"Download endpoint","textPreview":"Download endpoint","textChars":17,"textLines":1,"bbox":[858,180,220,30]}
+{"kind":"shape","id":"sh/b21wnil8","slide":6,"bbox":[1088,214,0,258]}
+{"kind":"textbox","id":"sh/a18vud4n","slide":6,"text":"Available only after\na verified artifact exists.\n\nOtherwise the endpoint\nreturns HTTP 409.","textPreview":"Available only after | a verified artifact exists. |  | Otherwise the endpoint | returns HTTP 409.","textChars":90,"textLines":5,"bbox":[858,244,205,168]}
+{"kind":"textbox","id":"sh/x4jeps3y","slide":6,"text":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  06","textPreview":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  06","textChars":45,"textLines":1,"bbox":[68,682,780,20]}
+{"kind":"notes","id":"nt/uufc2c","slide":6,"text":"Recovery states derive from the supplied project requirements. The download route in backend/app/api/reconstruction.py returns HTTP 409 when no verified output is available."}
+{"kind":"slide","id":"sl/hrs41g","slide":7,"title":"Investigator workflow","textShapes":19}
+{"kind":"textbox","id":"sh/psf2t4fu","slide":7,"text":"Investigator workflow","textPreview":"Investigator workflow","textChars":21,"textLines":1,"bbox":[68,48,880,52]}
+{"kind":"textbox","id":"sh/2p4ji9w3","slide":7,"text":"The existing React pages form one evidence journey","textPreview":"The existing React pages form one evidence journey","textChars":50,"textLines":1,"bbox":[70,103,900,28]}
+{"kind":"shape","id":"sh/3qxkrexo","slide":7,"bbox":[68,137,1144,0]}
+{"kind":"shape","id":"sh/cv6loje5","slide":7,"bbox":[54,310,198,112]}
+{"kind":"textbox","id":"sh/dwf2xofq","slide":7,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[72,325,34,20]}
+{"kind":"textbox","id":"sh/qtojm9wf","slide":7,"text":"New Investigation","textPreview":"New Investigation","textChars":17,"textLines":1,"bbox":[72,352,162,25]}
+{"kind":"textbox","id":"sh/ruxkvex0","slide":7,"text":"Create case and upload evidence","textPreview":"Create case and upload evidence","textChars":31,"textLines":1,"bbox":[72,380,162,28]}
+{"kind":"shape","id":"sh/szm1cfe1","slide":7,"bbox":[252,366,37,0]}
+{"kind":"shape","id":"sh/t0v2lkfm","slide":7,"bbox":[289,310,198,112]}
+{"kind":"textbox","id":"sh/hkryp4jm","slide":7,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[307,325,34,20]}
+{"kind":"textbox","id":"sh/gjihgzi1","slide":7,"text":"Recovery Analysis","textPreview":"Recovery Analysis","textChars":17,"textLines":1,"bbox":[307,352,162,25]}
+{"kind":"textbox","id":"sh/fi9gnu1g","slide":7,"text":"Run scan and reconstruction assessment","textPreview":"Run scan and reconstruction assessment","textChars":38,"textLines":1,"bbox":[307,380,162,28]}
+{"kind":"shape","id":"sh/ux0zep0v","slide":7,"bbox":[487,366,37,0]}
+{"kind":"shape","id":"sh/poritozi","slide":7,"bbox":[524,310,198,112]}
+{"kind":"textbox","id":"sh/4nihkjix","slide":7,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[542,325,34,20]}
+{"kind":"textbox","id":"sh/3m9gre1s","slide":7,"text":"Fragment Reconstruction","textPreview":"Fragment Reconstruction","textChars":23,"textLines":1,"bbox":[542,352,162,25]}
+{"kind":"textbox","id":"sh/2l0zi907","slide":7,"text":"Inspect scored relationship graph","textPreview":"Inspect scored relationship graph","textChars":33,"textLines":1,"bbox":[542,380,162,28]}
+{"kind":"shape","id":"sh/dsbixozu","slide":7,"bbox":[722,366,37,0]}
+{"kind":"shape","id":"sh/cr2hoji9","slide":7,"bbox":[759,310,198,112]}
+{"kind":"textbox","id":"sh/wva1knql","slide":7,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[777,325,34,20]}
+{"kind":"textbox","id":"sh/xwj2ts7q","slide":7,"text":"Recovered Evidence","textPreview":"Recovered Evidence","textChars":18,"textLines":1,"bbox":[777,352,162,25]}
+{"kind":"textbox","id":"sh/atsjix8f","slide":7,"text":"Review comparison, DNA and damage map","textPreview":"Review comparison, DNA and damage map","textChars":37,"textLines":1,"bbox":[777,380,162,28]}
+{"kind":"shape","id":"sh/bu1kr2p0","slide":7,"bbox":[957,366,37,0]}
+{"kind":"shape","id":"sh/kza1o7qh","slide":7,"bbox":[994,310,198,112]}
+{"kind":"textbox","id":"sh/l032xc72","slide":7,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1012,325,34,20]}
+{"kind":"textbox","id":"sh/yxsjmx8b","slide":7,"text":"Investigation Report","textPreview":"Investigation Report","textChars":20,"textLines":1,"bbox":[1012,352,162,25]}
+{"kind":"textbox","id":"sh/jy1kv2pw","slide":7,"text":"Export structured evidence summary","textPreview":"Export structured evidence summary","textChars":34,"textLines":1,"bbox":[1012,380,162,28]}
+{"kind":"textbox","id":"sh/03q1c3qd","slide":7,"text":"The UI communicates both the recovery result and its evidentiary basis, including missing bytes and provenance.","textPreview":"The UI communicates both the recovery result and its evidentiary basis, including missing bytes and provenance.","textChars":111,"textLines":1,"bbox":[162,562,930,34]}
+{"kind":"textbox","id":"sh/14zil87y","slide":7,"text":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  07","textPreview":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  07","textChars":45,"textLines":1,"bbox":[68,682,780,20]}
+{"kind":"notes","id":"nt/hrs41g","slide":7,"text":"Page names and behavior are from the React application in frontend/src/pages. This slide summarizes the implemented evidence journey."}
+{"kind":"slide","id":"sl/pyhis3","slide":8,"title":"Demo proof points","textShapes":20}
+{"kind":"textbox","id":"sh/s7itcj6h","slide":8,"text":"Demo proof points","textPreview":"Demo proof points","textChars":17,"textLines":1,"bbox":[68,48,880,52]}
+{"kind":"textbox","id":"sh/rmpsje5w","slide":8,"text":"What the judges can test in the working prototype","textPreview":"What the judges can test in the working prototype","textChars":49,"textLines":1,"bbox":[70,103,900,28]}
+{"kind":"shape","id":"sh/qlgra9ob","slide":8,"bbox":[68,137,1144,0]}
+{"kind":"shape","id":"sh/1crapony","slide":8,"bbox":[84,184,46,46]}
+{"kind":"textbox","id":"sh/0bitgj6d","slide":8,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[99,194,18,24]}
+{"kind":"textbox","id":"sh/fa9sny5s","slide":8,"text":"Upload the damaged benchmark","textPreview":"Upload the damaged benchmark","textChars":28,"textLines":1,"bbox":[162,182,360,28]}
+{"kind":"textbox","id":"sh/e90beto7","slide":8,"text":"Creates investigation, stores evidence and computes SHA-256.","textPreview":"Creates investigation, stores evidence and computes SHA-256.","textChars":60,"textLines":1,"bbox":[162,216,680,28]}
+{"kind":"shape","id":"sh/pgbat8nu","slide":8,"bbox":[84,268,46,46]}
+{"kind":"textbox","id":"sh/of2tk369","slide":8,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[99,278,18,24]}
+{"kind":"textbox","id":"sh/qdgve58z","slide":8,"text":"Open the analysis view","textPreview":"Open the analysis view","textChars":22,"textLines":1,"bbox":[162,266,360,28]}
+{"kind":"textbox","id":"sh/bepw7apk","slide":8,"text":"Shows signatures, fragment count, relationship count and recovery assessment.","textPreview":"Shows signatures, fragment count, relationship count and recovery assessment.","textChars":77,"textLines":1,"bbox":[162,300,680,28]}
+{"kind":"shape","id":"sh/cfydgfq5","slide":8,"bbox":[84,352,46,46]}
+{"kind":"textbox","id":"sh/dg7e9k7q","slide":8,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[99,362,18,24]}
+{"kind":"textbox","id":"sh/yhgvip8b","slide":8,"text":"Inspect the damage map","textPreview":"Inspect the damage map","textChars":22,"textLines":1,"bbox":[162,350,360,28]}
+{"kind":"textbox","id":"sh/zi9wbupw","slide":8,"text":"Shows observed, missing, reconstructed and uncertain regions with a ground-truth label.","textPreview":"Shows observed, missing, reconstructed and uncertain regions with a ground-truth label.","textChars":87,"textLines":1,"bbox":[162,384,680,28]}
+{"kind":"shape","id":"sh/0jidkzqh","slide":8,"bbox":[84,436,46,46]}
+{"kind":"textbox","id":"sh/lkredk7m","slide":8,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[99,446,18,24]}
+{"kind":"textbox","id":"sh/elwv6l87","slide":8,"text":"Download the verified output","textPreview":"Download the verified output","textChars":28,"textLines":1,"bbox":[162,434,360,28]}
+{"kind":"textbox","id":"sh/fm5czqpc","slide":8,"text":"Works only for the exact benchmark and confirms a SHA-256 match to the original.","textPreview":"Works only for the exact benchmark and confirms a SHA-256 match to the original.","textChars":80,"textLines":1,"bbox":[162,468,680,28]}
+{"kind":"shape","id":"sh/jq1s7m54","slide":8,"bbox":[84,520,46,46]}
+{"kind":"textbox","id":"sh/ipsbehoz","slide":8,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[99,530,18,24]}
+{"kind":"textbox","id":"sh/5s3a9wna","slide":8,"text":"Try unrelated evidence","textPreview":"Try unrelated evidence","textChars":22,"textLines":1,"bbox":[162,518,360,28]}
+{"kind":"textbox","id":"sh/4rutgr6p","slide":8,"text":"Shows analysis results without inventing a recovery artifact.","textPreview":"Shows analysis results without inventing a recovery artifact.","textChars":61,"textLines":1,"bbox":[162,552,680,28]}
+{"kind":"shape","id":"sh/v21s3mp8","slide":8,"bbox":[914,210,238,270]}
+{"kind":"textbox","id":"sh/u1sbahon","slide":8,"text":"Forensic promise","textPreview":"Forensic promise","textChars":16,"textLines":1,"bbox":[944,250,180,32]}
+{"kind":"textbox","id":"sh/hoja5cne","slide":8,"text":"RECOVERAI shows\nwhat it knows,\nwhat it can verify,\nand what remains\nunknown.","textPreview":"RECOVERAI shows | what it knows, | what it can verify, | and what remains | unknown.","textChars":76,"textLines":5,"bbox":[944,318,170,136]}
+{"kind":"textbox","id":"sh/w3atcr6t","slide":8,"text":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  08","textPreview":"RECOVERAI  /  CALMSTACKS 24H HACKATHON  /  08","textChars":45,"textLines":1,"bbox":[68,682,780,20]}
+{"kind":"notes","id":"nt/pyhis3","slide":8,"text":"Demo steps are documented in docs/demo-runbook.md. Facts are local project facts, not external research claims."}

@@ -1,66 +1,509 @@
-﻿import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import RecoveryComparison from "../components/evidence/RecoveryComparison";
 import {
   Eye,
-  Download,
   GitBranch,
+  RefreshCw,
   ScanLine,
   ShieldCheck,
   Bot,
+  AlertTriangle,
+  FileSearch,
+  Database,
+  Activity,
+  FileCheck2,
+  HardDrive
 } from "lucide-react";
-
 import Card from "../components/common/Card";
 import Badge from "../components/common/Badge";
 import EvidenceCopilot from "../components/evidence/EvidenceCopilot";
-import { files, recoverySummary } from "../data/demoData";
+import DamageMap from "../components/evidence/DamageMap";
 
-const tone = (status = "") => {
-  if (status.includes("Verified")) return "success";
-  if (status.includes("Insufficient")) return "danger";
-  if (status.includes("AI")) return "warning";
+const API =
+  import.meta.env.VITE_API_BASE_URL ||
+  "http://127.0.0.1:8001";
+
+/* -------------------------------------------------------
+   EVIDENCE ID
+------------------------------------------------------- */
+
+const getId = () => {
+  const q = new URLSearchParams(window.location.search).get("evidenceId");
+
+  return (
+    q ||
+    localStorage.getItem("recoverai_evidence_id") ||
+    localStorage.getItem("currentEvidenceId") ||
+    localStorage.getItem("evidenceId") ||
+    ""
+  );
+};
+
+/* -------------------------------------------------------
+   API HELPER
+------------------------------------------------------- */
+
+async function api(path, options = {}) {
+  const response = await fetch(`${API}${path}`, {
+    ...options,
+    headers: {
+      Accept: "application/json",
+      ...(options.headers || {})
+    }
+  });
+
+  const text = await response.text();
+
+  let data = null;
+
+  try {
+    data = text ? JSON.parse(text) : null;
+  } catch {
+    data = null;
+  }
+
+  if (!response.ok) {
+    throw new Error(
+      data?.detail ||
+        data?.error ||
+        `Backend request failed: HTTP ${response.status}`
+    );
+  }
+
+  return data;
+}
+
+/* -------------------------------------------------------
+   FORMATTERS
+------------------------------------------------------- */
+
+const bytes = (value) => {
+  const n = Number(value);
+
+  if (!Number.isFinite(n)) {
+    return "—";
+  }
+
+  if (n < 1024) {
+    return `${n} B`;
+  }
+
+  if (n < 1024 * 1024) {
+    return `${(n / 1024).toFixed(2)} KB`;
+  }
+
+  if (n < 1024 * 1024 * 1024) {
+    return `${(n / (1024 * 1024)).toFixed(2)} MB`;
+  }
+
+  return `${(n / (1024 * 1024 * 1024)).toFixed(2)} GB`;
+};
+
+const number = (value) => {
+  const n = Number(value);
+
+  if (!Number.isFinite(n)) {
+    return "—";
+  }
+
+  return new Intl.NumberFormat("en-US").format(n);
+};
+
+const pct = (value) => {
+  const n = Number(value);
+
+  if (!Number.isFinite(n)) {
+    return "—";
+  }
+
+  return `${(n * 100).toFixed(1)}%`;
+};
+
+/* -------------------------------------------------------
+   STATUS HELPERS
+------------------------------------------------------- */
+
+const getStatusTone = (status = "") => {
+  const normalized = String(status).toUpperCase();
+
+  if (
+    normalized.includes("VERIFIED") ||
+    normalized.includes("COMPLETE")
+  ) {
+    return "success";
+  }
+
+  if (
+    normalized.includes("INSUFFICIENT") ||
+    normalized.includes("FAILED")
+  ) {
+    return "danger";
+  }
+
+  if (
+    normalized.includes("PARTIAL") ||
+    normalized.includes("REPAIR") ||
+    normalized.includes("RECONSTRUCTION")
+  ) {
+    return "warning";
+  }
+
   return "info";
 };
 
+const getPriority = (confidence) => {
+  const value = Number(confidence);
+
+  if (!Number.isFinite(value)) {
+    return "Unknown";
+  }
+
+  if (value >= 0.9) {
+    return "High";
+  }
+
+  if (value >= 0.7) {
+    return "Medium";
+  }
+
+  return "Low";
+};
+
+/* -------------------------------------------------------
+   MAIN PAGE
+------------------------------------------------------- */
+
 export default function RecoveredEvidence() {
-  const [active, setActive] = useState(files[0]);
-  const [pos, setPos] = useState(52);
+  const evidenceId = getId();
+
+  const [evidence, setEvidence] = useState(null);
+  const [recon, setRecon] = useState(null);
+  const [damageMap, setDamageMap] = useState(null);
+
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
   const [copilotOpen, setCopilotOpen] = useState(true);
+
+  /* -----------------------------------------------------
+     LOAD REAL BACKEND DATA
+  ----------------------------------------------------- */
+
+  const load = async () => {
+    if (!evidenceId) {
+      return;
+    }
+
+    setLoading(true);
+    setError("");
+
+    try {
+      /* -----------------------------------------------
+         Evidence metadata
+      ------------------------------------------------ */
+
+      const evidenceResponse = await api(
+        `/api/evidence/${evidenceId}`
+      );
+
+      /* -----------------------------------------------
+         Reconstruction
+      ------------------------------------------------ */
+
+      const reconstructionResponse = await api(
+        `/api/reconstruction/${evidenceId}`,
+        {
+          method: "POST"
+        }
+      );
+
+      /* -----------------------------------------------
+         Damage map
+      ------------------------------------------------ */
+
+      let damageResponse = null;
+
+      try {
+        damageResponse = await api(
+          `/api/analysis/${evidenceId}/damage-map`
+        );
+      } catch (damageError) {
+        console.warn(
+          "Damage map could not be loaded:",
+          damageError
+        );
+      }
+
+      setEvidence(
+        evidenceResponse?.evidence ||
+          evidenceResponse ||
+          null
+      );
+
+      setRecon(
+        reconstructionResponse?.reconstruction ||
+          reconstructionResponse ||
+          null
+      );
+
+      setDamageMap(
+        damageResponse?.damage_map ||
+          damageResponse ||
+          null
+      );
+    } catch (err) {
+      setError(
+        err.message ||
+          "Unable to load evidence from the RECOVERAI backend."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    load();
+  }, [evidenceId]);
+
+  /* -----------------------------------------------------
+     NO EVIDENCE
+  ----------------------------------------------------- */
+
+  if (!evidenceId) {
+    return (
+      <div className="recovered-evidence-page">
+        <Card>
+          <FileSearch size={30} />
+
+          <h2>No Evidence Selected</h2>
+
+          <p>
+            Upload an evidence file first. This page reads
+            evidence directly from the RECOVERAI FastAPI
+            backend.
+          </p>
+
+          <button
+            className="secondary-btn"
+            onClick={() =>
+              (window.location.href =
+                "/investigation/new")
+            }
+          >
+            Upload Evidence
+          </button>
+        </Card>
+      </div>
+    );
+  }
+
+  /* -----------------------------------------------------
+     NORMALIZED DATA
+  ----------------------------------------------------- */
+
+  const e = evidence || {};
+  const r = recon || {};
+
+  const status =
+    r.status ||
+    r.recovery_status ||
+    e.status ||
+    "ANALYSIS PENDING";
+
+  const confidence = r.recovery_confidence;
+  const completeness = r.completeness;
+
+  const priority = getPriority(confidence);
+
+  const fragmentCount =
+    r.fragment_count ??
+    r.fragments_count ??
+    0;
+
+  const missingBytes =
+    r.missing_bytes ??
+    r.input_missing_bytes ??
+    0;
+
+  const verifiedBytes =
+    r.verified_bytes ?? 0;
+
+  const reconstructedBytes =
+    r.reconstructed_bytes ?? 0;
+
+  const structuralConfidence =
+    r.structural_confidence;
+
+  const validationValid =
+    r.validation?.valid === true;
+
+  /* -----------------------------------------------------
+     DAMAGE INFORMATION
+  ----------------------------------------------------- */
+
+  const damageRegions =
+    damageMap?.regions ||
+    damageMap?.damage_regions ||
+    r.missing_regions ||
+    r.missingRegions ||
+    [];
+
+  const damageRegionCount = Array.isArray(
+    damageRegions
+  )
+    ? damageRegions.length
+    : 0;
+
+  const knownMissingBytes =
+    damageMap?.known_missing_bytes ??
+    damageMap?.missing_bytes ??
+    missingBytes ??
+    0;
+
+  /* -----------------------------------------------------
+     COPILOT CONTEXT
+  ----------------------------------------------------- */
+
+  const copilotEvidence = {
+    id: e.id || evidenceId,
+
+    name:
+      e.original_filename ||
+      e.filename ||
+      "Evidence",
+
+    type:
+      e.evidence_type ||
+      e.mime_type ||
+      "Unknown",
+
+    status,
+
+    integrity: validationValid
+      ? "Valid"
+      : "Checked",
+
+    confidence: Number.isFinite(
+      Number(confidence)
+    )
+      ? Math.round(
+          Number(confidence) * 100
+        )
+      : 0,
+
+    fragments: fragmentCount,
+
+    priority
+  };
+
+  /* -----------------------------------------------------
+     RENDER
+  ----------------------------------------------------- */
 
   return (
     <div className="recovered-evidence-page">
+
+      {/* =================================================
+          HEADER
+      ================================================= */}
+
       <div className="page-intro">
+
         <div>
-          <span className="eyebrow">EVIDENCE LIBRARY</span>
+          <span className="eyebrow">
+            EVIDENCE LIBRARY · LIVE BACKEND
+          </span>
 
           <h2>Recovered Evidence</h2>
 
           <p>
-            Review recovery results, uncertainty, provenance and
-            comparison data.
+            Review real recovery, integrity,
+            completeness and damage information
+            returned by the RECOVERAI backend.
           </p>
         </div>
 
         <div className="toolbar">
-          <button className="secondary-btn">
+
+          <button
+            className="secondary-btn"
+            onClick={() =>
+              document
+                .getElementById(
+                  "recovery-comparison"
+                )
+                ?.scrollIntoView({
+                  behavior: "smooth"
+                })
+            }
+          >
+            <FileCheck2 size={16} />
+            Recovery Comparison
+          </button>
+
+          <button
+            className="secondary-btn"
+            onClick={() =>
+              document
+                .getElementById(
+                  "live-damage-map"
+                )
+                ?.scrollIntoView({
+                  behavior: "smooth"
+                })
+            }
+          >
             <ScanLine size={16} />
             Damage Map
           </button>
 
-          <button className="secondary-btn">
-            <Download size={16} />
-            Export
+          <button
+            className="secondary-btn"
+            onClick={load}
+            disabled={loading}
+          >
+            <RefreshCw
+              size={16}
+              className={
+                loading ? "spin" : ""
+              }
+            />
+
+            {loading
+              ? "Refreshing..."
+              : "Refresh"}
           </button>
 
           {!copilotOpen && (
             <button
-              className="secondary-btn copilot-open-btn"
-              onClick={() => setCopilotOpen(true)}
+              className="secondary-btn"
+              onClick={() =>
+                setCopilotOpen(true)
+              }
             >
               <Bot size={16} />
               Evidence AI
             </button>
           )}
+
         </div>
       </div>
+
+      {/* =================================================
+          ERROR
+      ================================================= */}
+
+      {error && (
+        <div className="error-box">
+          <AlertTriangle size={16} />
+
+          <span>{error}</span>
+        </div>
+      )}
+
+      {/* =================================================
+          WORKSPACE
+      ================================================= */}
 
       <div
         className={
@@ -69,31 +512,17 @@ export default function RecoveredEvidence() {
             : "evidence-workspace"
         }
       >
+
         <main className="evidence-main">
+
+          {/* =================================================
+              EVIDENCE TABLE
+          ================================================= */}
+
           <Card className="table-card">
-            <div className="filters">
-              <input placeholder="Search evidence..." />
-
-              <select>
-                <option>All statuses</option>
-                <option>Verified Recovery</option>
-                <option>Structural Repair</option>
-                <option>Plausible Reconstruction</option>
-                <option>AI-Inferred Reconstruction</option>
-                <option>Insufficient Evidence</option>
-              </select>
-
-              <select>
-                <option>All types</option>
-                <option>JPEG</option>
-                <option>PDF</option>
-                <option>ZIP</option>
-                <option>PNG</option>
-                <option>Binary</option>
-              </select>
-            </div>
 
             <table>
+
               <thead>
                 <tr>
                   <th>Evidence</th>
@@ -107,182 +536,297 @@ export default function RecoveredEvidence() {
               </thead>
 
               <tbody>
-                {files.map((f) => (
-                  <tr
-                    className={
-                      active.id === f.id ? "selected-row" : ""
-                    }
-                    key={f.id}
-                    onClick={() => setActive(f)}
-                  >
-                    <td>
-                      <b>{f.name}</b>
-                      <small>{f.id}</small>
-                    </td>
 
-                    <td>{f.type}</td>
+                <tr className="selected-row">
 
-                    <td>
-                      <Badge tone={tone(f.status)}>
-                        {f.status}
-                      </Badge>
-                    </td>
+                  <td>
+                    <b>
+                      {e.original_filename ||
+                        e.filename ||
+                        "Evidence"}
+                    </b>
 
-                    <td>{f.integrity}</td>
+                    <small>
+                      {e.id || evidenceId}
+                    </small>
+                  </td>
 
-                    <td>{f.confidence}%</td>
+                  <td>
+                    {e.evidence_type ||
+                      e.mime_type ||
+                      "Unknown"}
+                  </td>
 
-                    <td>
-                      <Badge
-                        tone={
-                          f.priority === "High"
-                            ? "danger"
-                            : "warning"
-                        }
-                      >
-                        {f.priority}
-                      </Badge>
-                    </td>
+                  <td>
+                    <Badge
+                      tone={getStatusTone(
+                        status
+                      )}
+                    >
+                      {status}
+                    </Badge>
+                  </td>
 
-                    <td>
-                      <button
-                        className="table-action"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setActive(f);
-                        }}
-                      >
-                        <Eye size={15} />
-                      </button>
+                  <td>
+                    {validationValid
+                      ? "Valid"
+                      : "Checked"}
+                  </td>
 
-                      <button
-                        className="table-action"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        <GitBranch size={15} />
-                      </button>
-                    </td>
-                  </tr>
-                ))}
+                  <td>
+                    {pct(confidence)}
+                  </td>
+
+                  <td>
+                    <Badge
+                      tone={
+                        priority === "High"
+                          ? "danger"
+                          : priority ===
+                            "Medium"
+                          ? "warning"
+                          : "info"
+                      }
+                    >
+                      {priority}
+                    </Badge>
+                  </td>
+
+                  <td>
+
+                    <button
+                      className="table-action"
+                      title="View evidence"
+                      onClick={() =>
+                        window.scrollTo({
+                          top: 0,
+                          behavior: "smooth"
+                        })
+                      }
+                    >
+                      <Eye size={15} />
+                    </button>
+
+                    <button
+                      className="table-action"
+                      title="Open reconstruction"
+                      onClick={() =>
+                        (window.location.href =
+                          `/reconstruction?evidenceId=${encodeURIComponent(
+                            evidenceId
+                          )}`)
+                      }
+                    >
+                      <GitBranch size={15} />
+                    </button>
+
+                  </td>
+
+                </tr>
+
               </tbody>
+
             </table>
+
           </Card>
 
+          {/* =================================================
+              RECOVERY OVERVIEW
+          ================================================= */}
+
           <div className="evidence-detail-grid">
+
             <Card>
+
               <div className="card-title">
-                <span>Recovery Comparison</span>
 
-                <Badge tone="info">ACTUAL DEMO DATA</Badge>
+                <span>
+                  Recovery Statistics
+                </span>
+
+                <Badge tone="info">
+                  REAL BACKEND DATA
+                </Badge>
+
               </div>
 
-              <div className="comparison">
-                <div className="compare-pane corrupted">
-                  <div className="compare-label">
-                    CORRUPTED INPUT
-                  </div>
+              <div className="recovery-stat-grid">
 
-                  <div className="fake-image damage">
-                    <div className="damage-block b1" />
-                    <div className="damage-block b2" />
-                    <div className="damage-block b3" />
+                <div>
+                  <small>
+                    Evidence size
+                  </small>
 
-                    <span>{active.name}</span>
-                  </div>
+                  <b>
+                    {bytes(
+                      e.file_size ??
+                        e.size
+                    )}
+                  </b>
                 </div>
 
-                <div className="compare-pane recovered">
-                  <div className="compare-label">
-                    RECOVERED OUTPUT
-                  </div>
+                <div>
+                  <small>
+                    Verified bytes
+                  </small>
 
-                  <div className="fake-image recovered-img">
-                    <div className="mountain" />
-
-                    <span>
-                      {recoverySummary.completeness}% COMPLETE
-                    </span>
-                  </div>
+                  <b>
+                    {bytes(
+                      verifiedBytes
+                    )}
+                  </b>
                 </div>
 
-                <div
-                  className="slider-line"
-                  style={{ left: `${pos}%` }}
-                />
+                <div>
+                  <small>
+                    Reconstructed
+                  </small>
 
-                <input
-                  className="compare-slider"
-                  type="range"
-                  min="10"
-                  max="90"
-                  value={pos}
-                  onChange={(e) => setPos(+e.target.value)}
-                />
+                  <b>
+                    {bytes(
+                      reconstructedBytes
+                    )}
+                  </b>
+                </div>
+
+                <div>
+                  <small>
+                    Missing
+                  </small>
+
+                  <b className="danger">
+                    {bytes(
+                      missingBytes
+                    )}
+                  </b>
+                </div>
+
+                <div>
+                  <small>
+                    Completeness
+                  </small>
+
+                  <b>
+                    {pct(completeness)}
+                  </b>
+                </div>
+
+                <div>
+                  <small>
+                    Structural confidence
+                  </small>
+
+                  <b>
+                    {pct(
+                      structuralConfidence
+                    )}
+                  </b>
+                </div>
+
+                <div>
+                  <small>
+                    Recovery confidence
+                  </small>
+
+                  <b>
+                    {pct(confidence)}
+                  </b>
+                </div>
+
+                <div>
+                  <small>
+                    Fragments
+                  </small>
+
+                  <b>
+                    {number(
+                      fragmentCount
+                    )}
+                  </b>
+                </div>
+
               </div>
 
-              <div className="comparison-stats">
-                <span>
-                  Original <b>4.8 MB</b>
-                </span>
-
-                <span>
-                  Verified <b>3.89 MB</b>
-                </span>
-
-                <span>
-                  Reconstructed <b>709 KB</b>
-                </span>
-
-                <span>
-                  Missing <b>448 KB</b>
-                </span>
-              </div>
             </Card>
 
+            {/* =================================================
+                SIDE INFORMATION
+            ================================================= */}
+
             <div className="side-stack">
+
               <Card>
+
                 <div className="card-title">
                   Evidence DNA
                 </div>
 
                 <div className="dna">
-                  <ShieldCheck size={34} />
+
+                  <ShieldCheck size={32} />
 
                   <div>
-                    <b>{active.name}</b>
+
+                    <b>
+                      {e.original_filename ||
+                        e.filename ||
+                        "Evidence"}
+                    </b>
 
                     <span>
-                      {active.type} · {active.fragments} fragments
+                      {e.evidence_type ||
+                        e.mime_type ||
+                        "Unknown"}
+
+                      {" · "}
+
+                      {number(
+                        fragmentCount
+                      )}
+
+                      {" fragments"}
                     </span>
+
                   </div>
+
                 </div>
 
                 <div className="hash">
-                  SHA-256 · 8a2d91c7...f91c
+                  SHA-256 ·{" "}
+                  {e.sha256 ||
+                    "Not available"}
                 </div>
 
                 <div className="metric-line">
-                  <span>Completeness</span>
-                  <b>{recoverySummary.completeness}%</b>
+                  <span>
+                    Completeness
+                  </span>
+
+                  <b>
+                    {pct(completeness)}
+                  </b>
                 </div>
 
                 <div className="metric-line">
-                  <span>Structural integrity</span>
-                  <b>{recoverySummary.structural}%</b>
+                  <span>
+                    Recovery confidence
+                  </span>
+
+                  <b>
+                    {pct(confidence)}
+                  </b>
                 </div>
 
-                <div className="metric-line">
-                  <span>Recovery confidence</span>
-                  <b>{recoverySummary.confidence}%</b>
-                </div>
               </Card>
 
               <Card>
+
                 <div className="card-title">
                   Provenance
                 </div>
 
                 <div className="provenance">
+
                   {[
                     "Original Evidence",
                     "Storage Block",
@@ -290,30 +834,367 @@ export default function RecoveredEvidence() {
                     "Reconstruction",
                     "Validation",
                     "Confidence",
-                    "Final Evidence",
-                  ].map((x, i) => (
-                    <div key={x}>
-                      <i />
+                    "Final Evidence"
+                  ].map(
+                    (label, index) => (
+                      <div
+                        key={label}
+                      >
+                        <i />
 
-                      {x}
+                        {label}
 
-                      {i < 6 && <span>›</span>}
-                    </div>
-                  ))}
+                        {index < 6 && (
+                          <span>
+                            ›
+                          </span>
+                        )}
+                      </div>
+                    )
+                  )}
+
                 </div>
+
               </Card>
+
             </div>
+
           </div>
+
+          {/* =================================================
+              FORENSIC CLASSIFICATION
+          ================================================= */}
+
+          <Card>
+
+            <div className="card-title">
+              <span>
+                Forensic Assessment
+              </span>
+
+              <Badge
+                tone={getStatusTone(
+                  status
+                )}
+              >
+                {status}
+              </Badge>
+            </div>
+
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns:
+                  "repeat(4, minmax(0, 1fr))",
+                gap: "12px"
+              }}
+            >
+
+              <div className="metric-line">
+                <span>
+                  Structural validity
+                </span>
+
+                <b>
+                  {validationValid
+                    ? "VALID"
+                    : "CHECKED"}
+                </b>
+              </div>
+
+              <div className="metric-line">
+                <span>
+                  Verified bytes
+                </span>
+
+                <b>
+                  {bytes(
+                    verifiedBytes
+                  )}
+                </b>
+              </div>
+
+              <div className="metric-line">
+                <span>
+                  Reconstructed bytes
+                </span>
+
+                <b>
+                  {bytes(
+                    reconstructedBytes
+                  )}
+                </b>
+              </div>
+
+              <div className="metric-line">
+                <span>
+                  Missing bytes
+                </span>
+
+                <b className="danger">
+                  {bytes(
+                    missingBytes
+                  )}
+                </b>
+              </div>
+
+            </div>
+
+            <div className="forensic-note">
+              <AlertTriangle size={15} />
+
+              <span>
+                RECOVERAI distinguishes
+                verified recovery from
+                structural repair and
+                reconstruction. Missing
+                bytes are not represented
+                as recovered unless the
+                backend verifies them.
+              </span>
+            </div>
+
+          </Card>
+
+          {/* =================================================
+              RECOVERY COMPARISON
+          ================================================= */}
+
+          <section
+            id="recovery-comparison"
+            style={{ marginTop: "20px" }}
+          >
+
+            <div className="section-heading">
+
+              <div>
+
+                <span className="eyebrow">
+                  RECOVERY VALIDATION
+                </span>
+
+                <h3>
+                  Recovery Comparison
+                </h3>
+
+                <p>
+                  Compare the actual evidence
+                  state with the backend
+                  reconstruction result.
+                </p>
+
+              </div>
+
+            </div>
+
+            <RecoveryComparison
+              evidenceId={evidenceId}
+            />
+
+          </section>
+
+          {/* =================================================
+              DAMAGE MAP
+          ================================================= */}
+
+          <section
+            id="live-damage-map"
+            style={{ marginTop: "20px" }}
+          >
+
+            <div className="section-heading">
+
+              <div>
+
+                <span className="eyebrow">
+                  LIVE FORENSIC ANALYSIS
+                </span>
+
+                <h3>
+                  Damage Map
+                </h3>
+
+                <p>
+                  Loaded using the selected
+                  evidence ID.
+                </p>
+
+              </div>
+
+            </div>
+
+            <DamageMap
+              evidenceId={evidenceId}
+            />
+
+          </section>
+
+          {/* =================================================
+              DAMAGE SUMMARY
+          ================================================= */}
+
+          <Card>
+
+            <div className="card-title">
+
+              <span>
+                Damage Summary
+              </span>
+
+              <Badge tone="warning">
+                BACKEND ANALYSIS
+              </Badge>
+
+            </div>
+
+            <div className="recovery-stat-grid">
+
+              <div>
+                <small>
+                  Damage regions
+                </small>
+
+                <b>
+                  {number(
+                    damageRegionCount
+                  )}
+                </b>
+              </div>
+
+              <div>
+                <small>
+                  Known missing bytes
+                </small>
+
+                <b className="danger">
+                  {bytes(
+                    knownMissingBytes
+                  )}
+                </b>
+              </div>
+
+              <div>
+                <small>
+                  Observed bytes
+                </small>
+
+                <b>
+                  {bytes(
+                    r.observed_bytes ??
+                      e.file_size ??
+                      e.size
+                  )}
+                </b>
+              </div>
+
+              <div>
+                <small>
+                  Reconstructed bytes
+                </small>
+
+                <b>
+                  {bytes(
+                    reconstructedBytes
+                  )}
+                </b>
+              </div>
+
+            </div>
+
+            {r.missing_region_source ===
+              "GROUND_TRUTH" && (
+              <div className="forensic-note">
+                <AlertTriangle
+                  size={15}
+                />
+
+                <span>
+                  The damaged region is
+                  associated with controlled
+                  benchmark ground truth.
+                  This must not be presented
+                  as an independently inferred
+                  forensic finding.
+                </span>
+              </div>
+            )}
+
+          </Card>
+
         </main>
+
+        {/* =================================================
+            EVIDENCE COPILOT
+        ================================================= */}
 
         {copilotOpen && (
           <EvidenceCopilot
-            evidence={active}
-            recoverySummary={recoverySummary}
-            onClose={() => setCopilotOpen(false)}
+            evidence={
+              copilotEvidence
+            }
+            recoverySummary={{
+              completeness:
+                Number.isFinite(
+                  Number(
+                    completeness
+                  )
+                )
+                  ? Math.round(
+                      Number(
+                        completeness
+                      ) * 100
+                    )
+                  : 0,
+
+              structural:
+                Number.isFinite(
+                  Number(
+                    structuralConfidence
+                  )
+                )
+                  ? Math.round(
+                      Number(
+                        structuralConfidence
+                      ) * 100
+                    )
+                  : 0,
+
+              confidence:
+                Number.isFinite(
+                  Number(
+                    confidence
+                  )
+                )
+                  ? Math.round(
+                      Number(
+                        confidence
+                      ) * 100
+                    )
+                  : 0,
+
+              verifiedBytes:
+                verifiedBytes,
+
+              reconstructedBytes:
+                reconstructedBytes,
+
+              missingBytes:
+                missingBytes,
+
+              fragmentCount:
+                fragmentCount,
+
+              damageRegionCount:
+                damageRegionCount
+            }}
+            onClose={() =>
+              setCopilotOpen(false)
+            }
           />
         )}
+
       </div>
+
     </div>
   );
 }

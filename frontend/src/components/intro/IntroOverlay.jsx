@@ -47,7 +47,7 @@ export default function IntroOverlay({ progress, navigate }) {
       <div className="intro-status right"><span>FRAGMENT ANALYSIS</span><div className="mini-bar"><i style={{width:`${Math.round(52 + progress*35)}%`}}/></div><b>{Math.round(52 + progress*35)}%</b></div>
       <div className="intro-scroll"><span>{showNav ? "SCROLL TO EXPLORE" : "SCROLL TO FRAGMENT"}</span><span className="scroll-glyph">↓</span></div>
       <div className="intro-corner intro-corner-left">RECOVERAI / CYBER FORENSICS</div>
-      <div className="intro-corner intro-corner-right">SYSTEM 01 · LIVE DEMO</div>
+      <div className="intro-corner intro-corner-right">SYSTEM 01 · EVIDENCE PLATFORM</div>
     </div>
   );
 }

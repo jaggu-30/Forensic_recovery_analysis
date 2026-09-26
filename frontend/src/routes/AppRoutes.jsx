@@ -29,6 +29,11 @@ export default function AppRoutes() {
       />
 
       <Route
+        path="/fragments"
+        element={<FragmentReconstruction />}
+      />
+
+      <Route
         path="/reconstruction"
         element={<FragmentReconstruction />}
       />

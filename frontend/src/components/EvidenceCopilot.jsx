@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import "./EvidenceCopilot.css";
 import {
   Bot,
   ChevronRight,

@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+pydantic-settings
+python-multipart
+aiofiles
+python-dotenv
+Pillow
+PyMuPDF
+python-magic-bin

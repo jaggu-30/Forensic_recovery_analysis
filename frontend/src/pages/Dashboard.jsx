@@ -1,27 +1,82 @@
-﻿import React from "react";
-import { Activity, Database, FileCheck2, Network, ShieldCheck, AlertTriangle, Clock3 } from "lucide-react";
-import { stats, files } from "../data/demoData";
+import { Activity, Database, FileCheck2, Network, ShieldCheck, AlertTriangle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
 import StatCard from "../components/common/StatCard";
 import Card from "../components/common/Card";
 import Badge from "../components/common/Badge";
-import { useNavigate } from "react-router-dom";
+import { getSelectedEvidence } from "../data/evidenceSession";
 
-const tone = s => s.includes("Verified") ? "success" : s.includes("Insufficient") ? "danger" : s.includes("AI") ? "warning" : "info";
+const percent = (value) => (value == null ? "—" : `${Math.round(value * 100)}%`);
 
-export default function Dashboard(){
- const nav=useNavigate();
- return <div>
-  <div className="page-intro"><div><span className="eyebrow">CURRENT INVESTIGATION</span><h2>Case IR-2026-014</h2><p>Damaged storage image â€¢ analysis workspace â€¢ Demo dataset</p></div><button className="primary-btn" onClick={()=>nav("/analysis")}>Open Analysis <Activity size={16}/></button></div>
-  <div className="stats-grid">
-   <StatCard label="Evidence Sources" value={stats.evidenceSources} sub="3 mounted sources" icon={Database}/>
-   <StatCard label="Fragments Detected" value={stats.fragmentsDetected.toLocaleString()} sub="+214 in last scan" icon={Network}/>
-   <StatCard label="Recoverable Files" value={stats.recoverableFiles} sub="47 candidates" icon={FileCheck2}/>
-   <StatCard label="Avg. Recovery Confidence" value={`${stats.averageConfidence}%`} sub="Across analyzed evidence" icon={ShieldCheck}/>
-  </div>
-  <div className="two-col">
-   <Card><div className="card-title"><span>Recovery Overview</span><Badge tone="success">ANALYSIS ACTIVE</Badge></div><div className="overview-big"><b>31</b><span>files reconstructed</span></div><div className="bar-row"><span>Verified Recovery</span><b>31</b></div><div className="mini-bar"><i style={{width:"66%"}}/></div><div className="bar-row"><span>Partial Recovery</span><b>9</b></div><div className="mini-bar"><i style={{width:"19%"}}/></div><div className="bar-row"><span>Unrecoverable</span><b>7</b></div><div className="mini-bar"><i style={{width:"15%"}}/></div></Card>
-   <Card><div className="card-title"><span>AI Insights</span><span className="live-label"><i/> LIVE</span></div><div className="insight"><ShieldCheck/><div><b>High-confidence cluster detected</b><p>5 JPEG fragments show strong structural compatibility.</p></div></div><div className="insight"><AlertTriangle/><div><b>2 metadata contradictions</b><p>Timestamp differences require investigator review.</p></div></div><div className="insight"><Clock3/><div><b>Analysis progress</b><p>Relationship analysis is currently running.</p></div></div></Card>
-  </div>
-  <Card className="table-card"><div className="card-title"><span>Top Priority Evidence</span><button className="text-btn" onClick={()=>nav("/evidence")}>View all</button></div><table><thead><tr><th>Evidence</th><th>Type</th><th>Status</th><th>Integrity</th><th>Confidence</th><th>Priority</th></tr></thead><tbody>{files.slice(0,4).map(f=><tr key={f.id}><td><b>{f.name}</b><small>{f.id}</small></td><td>{f.type}</td><td><Badge tone={tone(f.status)}>{f.status}</Badge></td><td>{f.integrity}</td><td><b>{f.confidence}%</b></td><td><Badge tone={f.priority==="High"?"danger":"warning"}>{f.priority}</Badge></td></tr>)}</tbody></table></Card>
- </div>
+export default function Dashboard() {
+  const navigate = useNavigate();
+  const evidence = getSelectedEvidence();
+  const analysis = evidence?.analysis;
+  const reconstruction = evidence?.reconstruction;
+  const result = reconstruction?.reconstruction;
+  const summary = analysis?.fragments?.summary;
+  const relationshipSummary = analysis?.relationships?.summary;
+
+  if (!evidence) {
+    return (
+      <div className="empty-analysis-state">
+        <span className="eyebrow">INVESTIGATION OVERVIEW</span>
+        <h2>No active investigation</h2>
+        <p className="muted">Create an investigation to populate this dashboard with evidence-backed metrics.</p>
+        <button className="primary-btn" onClick={() => navigate("/new-investigation")}>
+          Create Investigation
+        </button>
+      </div>
+    );
+  }
+
+  const hasDamage = (result?.input_missing_bytes || 0) > 0;
+  return (
+    <div>
+      <div className="page-intro">
+        <div>
+          <span className="eyebrow">CURRENT INVESTIGATION</span>
+          <h2>{evidence.investigation?.name || "Active Evidence Analysis"}</h2>
+          <p>Evidence-backed overview for {evidence.filename}.</p>
+        </div>
+        <button className="primary-btn" onClick={() => navigate("/analysis")}>
+          Open Analysis <Activity size={16} />
+        </button>
+      </div>
+
+      <div className="stats-grid">
+        <StatCard label="Evidence Sources" value="1" sub="Current active upload" icon={Database} />
+        <StatCard label="Fragments Detected" value={summary?.fragment_count ?? "—"} sub="4 KB observed storage blocks" icon={Network} />
+        <StatCard label="Relationships" value={relationshipSummary?.relationship_count ?? "—"} sub="Evidence-supported candidates" icon={FileCheck2} />
+        <StatCard label="Recovery Confidence" value={percent(result?.recovery_confidence)} sub="Assessment, not byte certainty" icon={ShieldCheck} />
+      </div>
+
+      <div className="two-col">
+        <Card>
+          <div className="card-title"><span>Recovery Overview</span><Badge tone={result?.status?.includes("VERIFIED") ? "success" : "info"}>{result?.status || "NOT ANALYZED"}</Badge></div>
+          <div className="overview-big"><b>{percent(result?.completeness)}</b><span>current recovery completeness</span></div>
+          <div className="bar-row"><span>Verified bytes</span><b>{result?.verified_bytes?.toLocaleString?.() ?? "—"}</b></div>
+          <div className="mini-bar"><i style={{ width: `${Math.round((result?.completeness || 0) * 100)}%` }} /></div>
+          <div className="bar-row"><span>Reconstructed bytes</span><b>{result?.reconstructed_bytes?.toLocaleString?.() ?? "0"}</b></div>
+          <div className="mini-bar"><i style={{ width: `${Math.round(((result?.reconstructed_bytes || 0) / Math.max(1, evidence.size || 1)) * 100)}%` }} /></div>
+          <div className="bar-row"><span>Input missing bytes</span><b>{result?.input_missing_bytes?.toLocaleString?.() ?? "0"}</b></div>
+        </Card>
+
+        <Card>
+          <div className="card-title"><span>Investigation Findings</span><span className="live-label"><i /> RECORDED</span></div>
+          <div className="insight"><ShieldCheck /><div><b>File type: {evidence.type}</b><p>SHA-256 was captured when evidence was imported.</p></div></div>
+          <div className="insight"><Network /><div><b>{relationshipSummary?.relationship_count ?? 0} fragment relationships scored</b><p>Scores represent candidate compatibility, not ownership proof.</p></div></div>
+          <div className="insight"><AlertTriangle /><div><b>{hasDamage ? "Missing evidence requires review" : "No missing region recorded"}</b><p>{hasDamage ? "Unavailable bytes remain explicitly identified unless independently verified." : "No supported byte-range damage record is available."}</p></div></div>
+        </Card>
+      </div>
+
+      <Card className="table-card">
+        <div className="card-title"><span>Selected Evidence</span><button className="text-btn" onClick={() => navigate("/evidence")}>Open workspace</button></div>
+        <table>
+          <thead><tr><th>Evidence</th><th>Type</th><th>Status</th><th>Fragments</th><th>Confidence</th></tr></thead>
+          <tbody><tr><td><b>{evidence.filename}</b><small>{evidence.id}</small></td><td>{evidence.type}</td><td><Badge tone={result?.status?.includes("INSUFFICIENT") ? "danger" : "info"}>{result?.status || evidence.status}</Badge></td><td>{summary?.fragment_count ?? "—"}</td><td><b>{percent(result?.recovery_confidence)}</b></td></tr></tbody>
+        </table>
+      </Card>
+    </div>
+  );
 }

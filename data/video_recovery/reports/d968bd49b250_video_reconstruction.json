@@ -1,0 +1,3000 @@
+{
+  "success": true,
+  "job_id": "d968bd49b250",
+  "filename": "recoverai_cat_corrupted.mp4",
+  "result": {
+    "success": true,
+    "pipeline": "PROBE → EXTRACT → VALIDATE → DAMAGE DETECTION → TEMPORAL RECONSTRUCTION → REASSEMBLE → VERIFY",
+    "input": {
+      "filename": "d968bd49b250_d968bd49b250_recoverai_cat_corrupted.mp4",
+      "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\input\\d968bd49b250_d968bd49b250_recoverai_cat_corrupted.mp4",
+      "container": "mov,mp4,m4a,3gp,3g2,mj2",
+      "size_bytes": 2836660,
+      "duration_seconds": 5.0,
+      "width": 640,
+      "height": 360,
+      "fps": 24.0,
+      "frame_count": 120,
+      "video_codec": "mpeg4",
+      "pixel_format": "yuv420p",
+      "audio_present": false,
+      "audio_codec": null,
+      "probe_ok": true
+    },
+    "extraction": {
+      "job_id": "d968bd49b250",
+      "source_video": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\input\\d968bd49b250_d968bd49b250_recoverai_cat_corrupted.mp4",
+      "frames_directory": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250",
+      "frame_count": 120,
+      "fps_used": 24.0,
+      "frames": [
+        {
+          "index": 0,
+          "filename": "frame_000001.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000001.png"
+        },
+        {
+          "index": 1,
+          "filename": "frame_000002.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000002.png"
+        },
+        {
+          "index": 2,
+          "filename": "frame_000003.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000003.png"
+        },
+        {
+          "index": 3,
+          "filename": "frame_000004.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000004.png"
+        },
+        {
+          "index": 4,
+          "filename": "frame_000005.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000005.png"
+        },
+        {
+          "index": 5,
+          "filename": "frame_000006.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000006.png"
+        },
+        {
+          "index": 6,
+          "filename": "frame_000007.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000007.png"
+        },
+        {
+          "index": 7,
+          "filename": "frame_000008.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000008.png"
+        },
+        {
+          "index": 8,
+          "filename": "frame_000009.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000009.png"
+        },
+        {
+          "index": 9,
+          "filename": "frame_000010.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000010.png"
+        },
+        {
+          "index": 10,
+          "filename": "frame_000011.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000011.png"
+        },
+        {
+          "index": 11,
+          "filename": "frame_000012.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000012.png"
+        },
+        {
+          "index": 12,
+          "filename": "frame_000013.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000013.png"
+        },
+        {
+          "index": 13,
+          "filename": "frame_000014.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000014.png"
+        },
+        {
+          "index": 14,
+          "filename": "frame_000015.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000015.png"
+        },
+        {
+          "index": 15,
+          "filename": "frame_000016.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000016.png"
+        },
+        {
+          "index": 16,
+          "filename": "frame_000017.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000017.png"
+        },
+        {
+          "index": 17,
+          "filename": "frame_000018.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000018.png"
+        },
+        {
+          "index": 18,
+          "filename": "frame_000019.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000019.png"
+        },
+        {
+          "index": 19,
+          "filename": "frame_000020.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000020.png"
+        },
+        {
+          "index": 20,
+          "filename": "frame_000021.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000021.png"
+        },
+        {
+          "index": 21,
+          "filename": "frame_000022.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000022.png"
+        },
+        {
+          "index": 22,
+          "filename": "frame_000023.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000023.png"
+        },
+        {
+          "index": 23,
+          "filename": "frame_000024.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000024.png"
+        },
+        {
+          "index": 24,
+          "filename": "frame_000025.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000025.png"
+        },
+        {
+          "index": 25,
+          "filename": "frame_000026.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000026.png"
+        },
+        {
+          "index": 26,
+          "filename": "frame_000027.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000027.png"
+        },
+        {
+          "index": 27,
+          "filename": "frame_000028.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000028.png"
+        },
+        {
+          "index": 28,
+          "filename": "frame_000029.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000029.png"
+        },
+        {
+          "index": 29,
+          "filename": "frame_000030.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000030.png"
+        },
+        {
+          "index": 30,
+          "filename": "frame_000031.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000031.png"
+        },
+        {
+          "index": 31,
+          "filename": "frame_000032.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000032.png"
+        },
+        {
+          "index": 32,
+          "filename": "frame_000033.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000033.png"
+        },
+        {
+          "index": 33,
+          "filename": "frame_000034.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000034.png"
+        },
+        {
+          "index": 34,
+          "filename": "frame_000035.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000035.png"
+        },
+        {
+          "index": 35,
+          "filename": "frame_000036.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000036.png"
+        },
+        {
+          "index": 36,
+          "filename": "frame_000037.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000037.png"
+        },
+        {
+          "index": 37,
+          "filename": "frame_000038.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000038.png"
+        },
+        {
+          "index": 38,
+          "filename": "frame_000039.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000039.png"
+        },
+        {
+          "index": 39,
+          "filename": "frame_000040.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000040.png"
+        },
+        {
+          "index": 40,
+          "filename": "frame_000041.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000041.png"
+        },
+        {
+          "index": 41,
+          "filename": "frame_000042.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000042.png"
+        },
+        {
+          "index": 42,
+          "filename": "frame_000043.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000043.png"
+        },
+        {
+          "index": 43,
+          "filename": "frame_000044.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000044.png"
+        },
+        {
+          "index": 44,
+          "filename": "frame_000045.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000045.png"
+        },
+        {
+          "index": 45,
+          "filename": "frame_000046.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000046.png"
+        },
+        {
+          "index": 46,
+          "filename": "frame_000047.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000047.png"
+        },
+        {
+          "index": 47,
+          "filename": "frame_000048.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000048.png"
+        },
+        {
+          "index": 48,
+          "filename": "frame_000049.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000049.png"
+        },
+        {
+          "index": 49,
+          "filename": "frame_000050.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000050.png"
+        },
+        {
+          "index": 50,
+          "filename": "frame_000051.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000051.png"
+        },
+        {
+          "index": 51,
+          "filename": "frame_000052.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000052.png"
+        },
+        {
+          "index": 52,
+          "filename": "frame_000053.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000053.png"
+        },
+        {
+          "index": 53,
+          "filename": "frame_000054.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000054.png"
+        },
+        {
+          "index": 54,
+          "filename": "frame_000055.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000055.png"
+        },
+        {
+          "index": 55,
+          "filename": "frame_000056.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000056.png"
+        },
+        {
+          "index": 56,
+          "filename": "frame_000057.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000057.png"
+        },
+        {
+          "index": 57,
+          "filename": "frame_000058.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000058.png"
+        },
+        {
+          "index": 58,
+          "filename": "frame_000059.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000059.png"
+        },
+        {
+          "index": 59,
+          "filename": "frame_000060.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000060.png"
+        },
+        {
+          "index": 60,
+          "filename": "frame_000061.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000061.png"
+        },
+        {
+          "index": 61,
+          "filename": "frame_000062.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000062.png"
+        },
+        {
+          "index": 62,
+          "filename": "frame_000063.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000063.png"
+        },
+        {
+          "index": 63,
+          "filename": "frame_000064.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000064.png"
+        },
+        {
+          "index": 64,
+          "filename": "frame_000065.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000065.png"
+        },
+        {
+          "index": 65,
+          "filename": "frame_000066.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000066.png"
+        },
+        {
+          "index": 66,
+          "filename": "frame_000067.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000067.png"
+        },
+        {
+          "index": 67,
+          "filename": "frame_000068.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000068.png"
+        },
+        {
+          "index": 68,
+          "filename": "frame_000069.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000069.png"
+        },
+        {
+          "index": 69,
+          "filename": "frame_000070.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000070.png"
+        },
+        {
+          "index": 70,
+          "filename": "frame_000071.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000071.png"
+        },
+        {
+          "index": 71,
+          "filename": "frame_000072.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000072.png"
+        },
+        {
+          "index": 72,
+          "filename": "frame_000073.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000073.png"
+        },
+        {
+          "index": 73,
+          "filename": "frame_000074.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000074.png"
+        },
+        {
+          "index": 74,
+          "filename": "frame_000075.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000075.png"
+        },
+        {
+          "index": 75,
+          "filename": "frame_000076.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000076.png"
+        },
+        {
+          "index": 76,
+          "filename": "frame_000077.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000077.png"
+        },
+        {
+          "index": 77,
+          "filename": "frame_000078.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000078.png"
+        },
+        {
+          "index": 78,
+          "filename": "frame_000079.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000079.png"
+        },
+        {
+          "index": 79,
+          "filename": "frame_000080.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000080.png"
+        },
+        {
+          "index": 80,
+          "filename": "frame_000081.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000081.png"
+        },
+        {
+          "index": 81,
+          "filename": "frame_000082.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000082.png"
+        },
+        {
+          "index": 82,
+          "filename": "frame_000083.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000083.png"
+        },
+        {
+          "index": 83,
+          "filename": "frame_000084.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000084.png"
+        },
+        {
+          "index": 84,
+          "filename": "frame_000085.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000085.png"
+        },
+        {
+          "index": 85,
+          "filename": "frame_000086.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000086.png"
+        },
+        {
+          "index": 86,
+          "filename": "frame_000087.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000087.png"
+        },
+        {
+          "index": 87,
+          "filename": "frame_000088.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000088.png"
+        },
+        {
+          "index": 88,
+          "filename": "frame_000089.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000089.png"
+        },
+        {
+          "index": 89,
+          "filename": "frame_000090.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000090.png"
+        },
+        {
+          "index": 90,
+          "filename": "frame_000091.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000091.png"
+        },
+        {
+          "index": 91,
+          "filename": "frame_000092.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000092.png"
+        },
+        {
+          "index": 92,
+          "filename": "frame_000093.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000093.png"
+        },
+        {
+          "index": 93,
+          "filename": "frame_000094.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000094.png"
+        },
+        {
+          "index": 94,
+          "filename": "frame_000095.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000095.png"
+        },
+        {
+          "index": 95,
+          "filename": "frame_000096.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000096.png"
+        },
+        {
+          "index": 96,
+          "filename": "frame_000097.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000097.png"
+        },
+        {
+          "index": 97,
+          "filename": "frame_000098.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000098.png"
+        },
+        {
+          "index": 98,
+          "filename": "frame_000099.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000099.png"
+        },
+        {
+          "index": 99,
+          "filename": "frame_000100.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000100.png"
+        },
+        {
+          "index": 100,
+          "filename": "frame_000101.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000101.png"
+        },
+        {
+          "index": 101,
+          "filename": "frame_000102.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000102.png"
+        },
+        {
+          "index": 102,
+          "filename": "frame_000103.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000103.png"
+        },
+        {
+          "index": 103,
+          "filename": "frame_000104.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000104.png"
+        },
+        {
+          "index": 104,
+          "filename": "frame_000105.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000105.png"
+        },
+        {
+          "index": 105,
+          "filename": "frame_000106.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000106.png"
+        },
+        {
+          "index": 106,
+          "filename": "frame_000107.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000107.png"
+        },
+        {
+          "index": 107,
+          "filename": "frame_000108.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000108.png"
+        },
+        {
+          "index": 108,
+          "filename": "frame_000109.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000109.png"
+        },
+        {
+          "index": 109,
+          "filename": "frame_000110.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000110.png"
+        },
+        {
+          "index": 110,
+          "filename": "frame_000111.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000111.png"
+        },
+        {
+          "index": 111,
+          "filename": "frame_000112.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000112.png"
+        },
+        {
+          "index": 112,
+          "filename": "frame_000113.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000113.png"
+        },
+        {
+          "index": 113,
+          "filename": "frame_000114.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000114.png"
+        },
+        {
+          "index": 114,
+          "filename": "frame_000115.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000115.png"
+        },
+        {
+          "index": 115,
+          "filename": "frame_000116.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000116.png"
+        },
+        {
+          "index": 116,
+          "filename": "frame_000117.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000117.png"
+        },
+        {
+          "index": 117,
+          "filename": "frame_000118.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000118.png"
+        },
+        {
+          "index": 118,
+          "filename": "frame_000119.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000119.png"
+        },
+        {
+          "index": 119,
+          "filename": "frame_000120.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000120.png"
+        }
+      ]
+    },
+    "frame_validation": {
+      "total_frames": 120,
+      "valid_frames": 120,
+      "invalid_frames": 0,
+      "frame_integrity": 1.0,
+      "frames": [
+        {
+          "index": 0,
+          "filename": "frame_000001.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000001.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 52293,
+          "reason": null
+        },
+        {
+          "index": 1,
+          "filename": "frame_000002.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000002.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53755,
+          "reason": null
+        },
+        {
+          "index": 2,
+          "filename": "frame_000003.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000003.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53968,
+          "reason": null
+        },
+        {
+          "index": 3,
+          "filename": "frame_000004.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000004.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 54569,
+          "reason": null
+        },
+        {
+          "index": 4,
+          "filename": "frame_000005.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000005.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53886,
+          "reason": null
+        },
+        {
+          "index": 5,
+          "filename": "frame_000006.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000006.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 54282,
+          "reason": null
+        },
+        {
+          "index": 6,
+          "filename": "frame_000007.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000007.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 54628,
+          "reason": null
+        },
+        {
+          "index": 7,
+          "filename": "frame_000008.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000008.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 54741,
+          "reason": null
+        },
+        {
+          "index": 8,
+          "filename": "frame_000009.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000009.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 54450,
+          "reason": null
+        },
+        {
+          "index": 9,
+          "filename": "frame_000010.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000010.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 54069,
+          "reason": null
+        },
+        {
+          "index": 10,
+          "filename": "frame_000011.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000011.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 54250,
+          "reason": null
+        },
+        {
+          "index": 11,
+          "filename": "frame_000012.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000012.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 54870,
+          "reason": null
+        },
+        {
+          "index": 12,
+          "filename": "frame_000013.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000013.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 52152,
+          "reason": null
+        },
+        {
+          "index": 13,
+          "filename": "frame_000014.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000014.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 52352,
+          "reason": null
+        },
+        {
+          "index": 14,
+          "filename": "frame_000015.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000015.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 52159,
+          "reason": null
+        },
+        {
+          "index": 15,
+          "filename": "frame_000016.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000016.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 52508,
+          "reason": null
+        },
+        {
+          "index": 16,
+          "filename": "frame_000017.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000017.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 52910,
+          "reason": null
+        },
+        {
+          "index": 17,
+          "filename": "frame_000018.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000018.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53220,
+          "reason": null
+        },
+        {
+          "index": 18,
+          "filename": "frame_000019.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000019.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53834,
+          "reason": null
+        },
+        {
+          "index": 19,
+          "filename": "frame_000020.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000020.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53616,
+          "reason": null
+        },
+        {
+          "index": 20,
+          "filename": "frame_000021.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000021.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53078,
+          "reason": null
+        },
+        {
+          "index": 21,
+          "filename": "frame_000022.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000022.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53214,
+          "reason": null
+        },
+        {
+          "index": 22,
+          "filename": "frame_000023.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000023.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53697,
+          "reason": null
+        },
+        {
+          "index": 23,
+          "filename": "frame_000024.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000024.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 54122,
+          "reason": null
+        },
+        {
+          "index": 24,
+          "filename": "frame_000025.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000025.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 52403,
+          "reason": null
+        },
+        {
+          "index": 25,
+          "filename": "frame_000026.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000026.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 52779,
+          "reason": null
+        },
+        {
+          "index": 26,
+          "filename": "frame_000027.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000027.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 52585,
+          "reason": null
+        },
+        {
+          "index": 27,
+          "filename": "frame_000028.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000028.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53752,
+          "reason": null
+        },
+        {
+          "index": 28,
+          "filename": "frame_000029.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000029.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53412,
+          "reason": null
+        },
+        {
+          "index": 29,
+          "filename": "frame_000030.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000030.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53405,
+          "reason": null
+        },
+        {
+          "index": 30,
+          "filename": "frame_000031.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000031.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53571,
+          "reason": null
+        },
+        {
+          "index": 31,
+          "filename": "frame_000032.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000032.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53910,
+          "reason": null
+        },
+        {
+          "index": 32,
+          "filename": "frame_000033.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000033.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53196,
+          "reason": null
+        },
+        {
+          "index": 33,
+          "filename": "frame_000034.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000034.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53360,
+          "reason": null
+        },
+        {
+          "index": 34,
+          "filename": "frame_000035.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000035.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53142,
+          "reason": null
+        },
+        {
+          "index": 35,
+          "filename": "frame_000036.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000036.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53423,
+          "reason": null
+        },
+        {
+          "index": 36,
+          "filename": "frame_000037.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000037.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 52596,
+          "reason": null
+        },
+        {
+          "index": 37,
+          "filename": "frame_000038.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000038.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53293,
+          "reason": null
+        },
+        {
+          "index": 38,
+          "filename": "frame_000039.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000039.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53236,
+          "reason": null
+        },
+        {
+          "index": 39,
+          "filename": "frame_000040.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000040.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 53373,
+          "reason": null
+        },
+        {
+          "index": 40,
+          "filename": "frame_000041.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000041.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 245775,
+          "reason": null
+        },
+        {
+          "index": 41,
+          "filename": "frame_000042.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000042.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 266267,
+          "reason": null
+        },
+        {
+          "index": 42,
+          "filename": "frame_000043.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000043.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 274009,
+          "reason": null
+        },
+        {
+          "index": 43,
+          "filename": "frame_000044.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000044.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 278274,
+          "reason": null
+        },
+        {
+          "index": 44,
+          "filename": "frame_000045.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000045.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 277831,
+          "reason": null
+        },
+        {
+          "index": 45,
+          "filename": "frame_000046.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000046.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 269641,
+          "reason": null
+        },
+        {
+          "index": 46,
+          "filename": "frame_000047.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000047.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 262273,
+          "reason": null
+        },
+        {
+          "index": 47,
+          "filename": "frame_000048.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000048.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 264164,
+          "reason": null
+        },
+        {
+          "index": 48,
+          "filename": "frame_000049.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000049.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 238283,
+          "reason": null
+        },
+        {
+          "index": 49,
+          "filename": "frame_000050.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000050.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 263643,
+          "reason": null
+        },
+        {
+          "index": 50,
+          "filename": "frame_000051.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000051.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 263016,
+          "reason": null
+        },
+        {
+          "index": 51,
+          "filename": "frame_000052.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000052.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 270280,
+          "reason": null
+        },
+        {
+          "index": 52,
+          "filename": "frame_000053.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000053.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 268470,
+          "reason": null
+        },
+        {
+          "index": 53,
+          "filename": "frame_000054.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000054.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 271369,
+          "reason": null
+        },
+        {
+          "index": 54,
+          "filename": "frame_000055.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000055.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 271147,
+          "reason": null
+        },
+        {
+          "index": 55,
+          "filename": "frame_000056.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000056.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 273715,
+          "reason": null
+        },
+        {
+          "index": 56,
+          "filename": "frame_000057.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000057.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 55084,
+          "reason": null
+        },
+        {
+          "index": 57,
+          "filename": "frame_000058.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000058.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56072,
+          "reason": null
+        },
+        {
+          "index": 58,
+          "filename": "frame_000059.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000059.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56080,
+          "reason": null
+        },
+        {
+          "index": 59,
+          "filename": "frame_000060.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000060.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 55712,
+          "reason": null
+        },
+        {
+          "index": 60,
+          "filename": "frame_000061.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000061.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56051,
+          "reason": null
+        },
+        {
+          "index": 61,
+          "filename": "frame_000062.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000062.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56549,
+          "reason": null
+        },
+        {
+          "index": 62,
+          "filename": "frame_000063.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000063.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56971,
+          "reason": null
+        },
+        {
+          "index": 63,
+          "filename": "frame_000064.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000064.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56867,
+          "reason": null
+        },
+        {
+          "index": 64,
+          "filename": "frame_000065.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000065.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57217,
+          "reason": null
+        },
+        {
+          "index": 65,
+          "filename": "frame_000066.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000066.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57945,
+          "reason": null
+        },
+        {
+          "index": 66,
+          "filename": "frame_000067.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000067.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 58222,
+          "reason": null
+        },
+        {
+          "index": 67,
+          "filename": "frame_000068.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000068.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57426,
+          "reason": null
+        },
+        {
+          "index": 68,
+          "filename": "frame_000069.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000069.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56194,
+          "reason": null
+        },
+        {
+          "index": 69,
+          "filename": "frame_000070.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000070.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57011,
+          "reason": null
+        },
+        {
+          "index": 70,
+          "filename": "frame_000071.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000071.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57591,
+          "reason": null
+        },
+        {
+          "index": 71,
+          "filename": "frame_000072.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000072.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57183,
+          "reason": null
+        },
+        {
+          "index": 72,
+          "filename": "frame_000073.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000073.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57517,
+          "reason": null
+        },
+        {
+          "index": 73,
+          "filename": "frame_000074.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000074.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57813,
+          "reason": null
+        },
+        {
+          "index": 74,
+          "filename": "frame_000075.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000075.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 58525,
+          "reason": null
+        },
+        {
+          "index": 75,
+          "filename": "frame_000076.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000076.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57658,
+          "reason": null
+        },
+        {
+          "index": 76,
+          "filename": "frame_000077.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000077.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57480,
+          "reason": null
+        },
+        {
+          "index": 77,
+          "filename": "frame_000078.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000078.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57814,
+          "reason": null
+        },
+        {
+          "index": 78,
+          "filename": "frame_000079.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000079.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 115735,
+          "reason": null
+        },
+        {
+          "index": 79,
+          "filename": "frame_000080.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000080.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 117344,
+          "reason": null
+        },
+        {
+          "index": 80,
+          "filename": "frame_000081.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000081.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 113239,
+          "reason": null
+        },
+        {
+          "index": 81,
+          "filename": "frame_000082.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000082.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 115036,
+          "reason": null
+        },
+        {
+          "index": 82,
+          "filename": "frame_000083.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000083.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 114865,
+          "reason": null
+        },
+        {
+          "index": 83,
+          "filename": "frame_000084.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000084.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 110062,
+          "reason": null
+        },
+        {
+          "index": 84,
+          "filename": "frame_000085.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000085.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 114074,
+          "reason": null
+        },
+        {
+          "index": 85,
+          "filename": "frame_000086.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000086.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 114152,
+          "reason": null
+        },
+        {
+          "index": 86,
+          "filename": "frame_000087.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000087.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 117786,
+          "reason": null
+        },
+        {
+          "index": 87,
+          "filename": "frame_000088.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000088.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 118317,
+          "reason": null
+        },
+        {
+          "index": 88,
+          "filename": "frame_000089.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000089.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 116703,
+          "reason": null
+        },
+        {
+          "index": 89,
+          "filename": "frame_000090.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000090.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 120076,
+          "reason": null
+        },
+        {
+          "index": 90,
+          "filename": "frame_000091.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000091.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 121061,
+          "reason": null
+        },
+        {
+          "index": 91,
+          "filename": "frame_000092.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000092.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 120056,
+          "reason": null
+        },
+        {
+          "index": 92,
+          "filename": "frame_000093.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000093.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56424,
+          "reason": null
+        },
+        {
+          "index": 93,
+          "filename": "frame_000094.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000094.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56500,
+          "reason": null
+        },
+        {
+          "index": 94,
+          "filename": "frame_000095.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000095.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56795,
+          "reason": null
+        },
+        {
+          "index": 95,
+          "filename": "frame_000096.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000096.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56049,
+          "reason": null
+        },
+        {
+          "index": 96,
+          "filename": "frame_000097.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000097.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56431,
+          "reason": null
+        },
+        {
+          "index": 97,
+          "filename": "frame_000098.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000098.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57316,
+          "reason": null
+        },
+        {
+          "index": 98,
+          "filename": "frame_000099.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000099.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57991,
+          "reason": null
+        },
+        {
+          "index": 99,
+          "filename": "frame_000100.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000100.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 58274,
+          "reason": null
+        },
+        {
+          "index": 100,
+          "filename": "frame_000101.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000101.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57630,
+          "reason": null
+        },
+        {
+          "index": 101,
+          "filename": "frame_000102.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000102.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57751,
+          "reason": null
+        },
+        {
+          "index": 102,
+          "filename": "frame_000103.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000103.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 58323,
+          "reason": null
+        },
+        {
+          "index": 103,
+          "filename": "frame_000104.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000104.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57877,
+          "reason": null
+        },
+        {
+          "index": 104,
+          "filename": "frame_000105.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000105.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56244,
+          "reason": null
+        },
+        {
+          "index": 105,
+          "filename": "frame_000106.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000106.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56557,
+          "reason": null
+        },
+        {
+          "index": 106,
+          "filename": "frame_000107.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000107.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57217,
+          "reason": null
+        },
+        {
+          "index": 107,
+          "filename": "frame_000108.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000108.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57547,
+          "reason": null
+        },
+        {
+          "index": 108,
+          "filename": "frame_000109.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000109.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57114,
+          "reason": null
+        },
+        {
+          "index": 109,
+          "filename": "frame_000110.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000110.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57934,
+          "reason": null
+        },
+        {
+          "index": 110,
+          "filename": "frame_000111.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000111.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 58256,
+          "reason": null
+        },
+        {
+          "index": 111,
+          "filename": "frame_000112.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000112.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57985,
+          "reason": null
+        },
+        {
+          "index": 112,
+          "filename": "frame_000113.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000113.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 57872,
+          "reason": null
+        },
+        {
+          "index": 113,
+          "filename": "frame_000114.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000114.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 58496,
+          "reason": null
+        },
+        {
+          "index": 114,
+          "filename": "frame_000115.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000115.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 59348,
+          "reason": null
+        },
+        {
+          "index": 115,
+          "filename": "frame_000116.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000116.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 59358,
+          "reason": null
+        },
+        {
+          "index": 116,
+          "filename": "frame_000117.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000117.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 55730,
+          "reason": null
+        },
+        {
+          "index": 117,
+          "filename": "frame_000118.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000118.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56114,
+          "reason": null
+        },
+        {
+          "index": 118,
+          "filename": "frame_000119.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000119.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 56132,
+          "reason": null
+        },
+        {
+          "index": 119,
+          "filename": "frame_000120.png",
+          "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\frames\\d968bd49b250\\frame_000120.png",
+          "valid": true,
+          "width": 640,
+          "height": 360,
+          "channels": 3,
+          "size_bytes": 55639,
+          "reason": null
+        }
+      ]
+    },
+    "benchmark": {
+      "benchmark": true,
+      "source": "CONTROLLED_BENCHMARK",
+      "original_video": "recoverai_cat_test.mp4",
+      "corrupted_video": "recoverai_cat_corrupted.mp4",
+      "total_frames": 120,
+      "damaged_frame_start": 40,
+      "damaged_frame_end": 55,
+      "damaged_frames": 16,
+      "damage_type": "VISUAL_PIXEL_CORRUPTION",
+      "reconstruction_method": "TEMPORAL_NEIGHBOUR_INTERPOLATION",
+      "warning": "These damaged-frame indices are controlled benchmark ground truth and must not be represented as independently inferred forensic findings."
+    },
+    "visual_damage": {
+      "method": "CONTROLLED_BENCHMARK_GROUND_TRUTH",
+      "detected_count": 16,
+      "detected_frames": [
+        {
+          "frame_index": 40,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 41,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 42,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 43,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 44,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 45,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 46,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 47,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 48,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 49,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 50,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 51,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 52,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 53,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 54,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        },
+        {
+          "frame_index": 55,
+          "damage_score": 1.0,
+          "confidence": 1.0,
+          "damage_type": "VISUAL_PIXEL_CORRUPTION",
+          "suspicious": true,
+          "evidence_basis": "CONTROLLED_BENCHMARK_METADATA",
+          "forensic_interpretation": "Known benchmark ground truth; not an independently inferred forensic finding."
+        }
+      ],
+      "benchmark": true,
+      "source": "CONTROLLED_BENCHMARK",
+      "damage_start": 40,
+      "damage_end": 55,
+      "damage_type": "VISUAL_PIXEL_CORRUPTION",
+      "warning": "These damaged-frame indices are controlled benchmark ground truth and must not be represented as independently inferred forensic findings."
+    },
+    "reconstruction": {
+      "success": true,
+      "frames_directory": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames",
+      "total_frames": 120,
+      "reconstructed_count": 16,
+      "verified_count": 104,
+      "failed_count": 0,
+      "reconstructed_frames": [
+        {
+          "frame_index": 0,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000001.png"
+        },
+        {
+          "frame_index": 1,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000002.png"
+        },
+        {
+          "frame_index": 2,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000003.png"
+        },
+        {
+          "frame_index": 3,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000004.png"
+        },
+        {
+          "frame_index": 4,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000005.png"
+        },
+        {
+          "frame_index": 5,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000006.png"
+        },
+        {
+          "frame_index": 6,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000007.png"
+        },
+        {
+          "frame_index": 7,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000008.png"
+        },
+        {
+          "frame_index": 8,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000009.png"
+        },
+        {
+          "frame_index": 9,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000010.png"
+        },
+        {
+          "frame_index": 10,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000011.png"
+        },
+        {
+          "frame_index": 11,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000012.png"
+        },
+        {
+          "frame_index": 12,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000013.png"
+        },
+        {
+          "frame_index": 13,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000014.png"
+        },
+        {
+          "frame_index": 14,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000015.png"
+        },
+        {
+          "frame_index": 15,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000016.png"
+        },
+        {
+          "frame_index": 16,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000017.png"
+        },
+        {
+          "frame_index": 17,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000018.png"
+        },
+        {
+          "frame_index": 18,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000019.png"
+        },
+        {
+          "frame_index": 19,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000020.png"
+        },
+        {
+          "frame_index": 20,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000021.png"
+        },
+        {
+          "frame_index": 21,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000022.png"
+        },
+        {
+          "frame_index": 22,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000023.png"
+        },
+        {
+          "frame_index": 23,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000024.png"
+        },
+        {
+          "frame_index": 24,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000025.png"
+        },
+        {
+          "frame_index": 25,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000026.png"
+        },
+        {
+          "frame_index": 26,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000027.png"
+        },
+        {
+          "frame_index": 27,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000028.png"
+        },
+        {
+          "frame_index": 28,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000029.png"
+        },
+        {
+          "frame_index": 29,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000030.png"
+        },
+        {
+          "frame_index": 30,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000031.png"
+        },
+        {
+          "frame_index": 31,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000032.png"
+        },
+        {
+          "frame_index": 32,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000033.png"
+        },
+        {
+          "frame_index": 33,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000034.png"
+        },
+        {
+          "frame_index": 34,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000035.png"
+        },
+        {
+          "frame_index": 35,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000036.png"
+        },
+        {
+          "frame_index": 36,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000037.png"
+        },
+        {
+          "frame_index": 37,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000038.png"
+        },
+        {
+          "frame_index": 38,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000039.png"
+        },
+        {
+          "frame_index": 39,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000040.png"
+        },
+        {
+          "frame_index": 40,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000041.png"
+        },
+        {
+          "frame_index": 41,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000042.png"
+        },
+        {
+          "frame_index": 42,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000043.png"
+        },
+        {
+          "frame_index": 43,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000044.png"
+        },
+        {
+          "frame_index": 44,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000045.png"
+        },
+        {
+          "frame_index": 45,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000046.png"
+        },
+        {
+          "frame_index": 46,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000047.png"
+        },
+        {
+          "frame_index": 47,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000048.png"
+        },
+        {
+          "frame_index": 48,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000049.png"
+        },
+        {
+          "frame_index": 49,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000050.png"
+        },
+        {
+          "frame_index": 50,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000051.png"
+        },
+        {
+          "frame_index": 51,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000052.png"
+        },
+        {
+          "frame_index": 52,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000053.png"
+        },
+        {
+          "frame_index": 53,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000054.png"
+        },
+        {
+          "frame_index": 54,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000055.png"
+        },
+        {
+          "frame_index": 55,
+          "status": "RECONSTRUCTED",
+          "evidence_basis": "CONTROLLED_BENCHMARK",
+          "previous_clean_frame": 39,
+          "next_clean_frame": 56,
+          "success": true,
+          "method": "CLEAN_BOUNDARY_TEMPORAL_INTERPOLATION",
+          "classification": "PLAUSIBLE RECONSTRUCTION",
+          "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+          "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000056.png"
+        },
+        {
+          "frame_index": 56,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000057.png"
+        },
+        {
+          "frame_index": 57,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000058.png"
+        },
+        {
+          "frame_index": 58,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000059.png"
+        },
+        {
+          "frame_index": 59,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000060.png"
+        },
+        {
+          "frame_index": 60,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000061.png"
+        },
+        {
+          "frame_index": 61,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000062.png"
+        },
+        {
+          "frame_index": 62,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000063.png"
+        },
+        {
+          "frame_index": 63,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000064.png"
+        },
+        {
+          "frame_index": 64,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000065.png"
+        },
+        {
+          "frame_index": 65,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000066.png"
+        },
+        {
+          "frame_index": 66,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000067.png"
+        },
+        {
+          "frame_index": 67,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000068.png"
+        },
+        {
+          "frame_index": 68,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000069.png"
+        },
+        {
+          "frame_index": 69,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000070.png"
+        },
+        {
+          "frame_index": 70,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000071.png"
+        },
+        {
+          "frame_index": 71,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000072.png"
+        },
+        {
+          "frame_index": 72,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000073.png"
+        },
+        {
+          "frame_index": 73,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000074.png"
+        },
+        {
+          "frame_index": 74,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000075.png"
+        },
+        {
+          "frame_index": 75,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000076.png"
+        },
+        {
+          "frame_index": 76,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000077.png"
+        },
+        {
+          "frame_index": 77,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000078.png"
+        },
+        {
+          "frame_index": 78,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000079.png"
+        },
+        {
+          "frame_index": 79,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000080.png"
+        },
+        {
+          "frame_index": 80,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000081.png"
+        },
+        {
+          "frame_index": 81,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000082.png"
+        },
+        {
+          "frame_index": 82,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000083.png"
+        },
+        {
+          "frame_index": 83,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000084.png"
+        },
+        {
+          "frame_index": 84,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000085.png"
+        },
+        {
+          "frame_index": 85,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000086.png"
+        },
+        {
+          "frame_index": 86,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000087.png"
+        },
+        {
+          "frame_index": 87,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000088.png"
+        },
+        {
+          "frame_index": 88,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000089.png"
+        },
+        {
+          "frame_index": 89,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000090.png"
+        },
+        {
+          "frame_index": 90,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000091.png"
+        },
+        {
+          "frame_index": 91,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000092.png"
+        },
+        {
+          "frame_index": 92,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000093.png"
+        },
+        {
+          "frame_index": 93,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000094.png"
+        },
+        {
+          "frame_index": 94,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000095.png"
+        },
+        {
+          "frame_index": 95,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000096.png"
+        },
+        {
+          "frame_index": 96,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000097.png"
+        },
+        {
+          "frame_index": 97,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000098.png"
+        },
+        {
+          "frame_index": 98,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000099.png"
+        },
+        {
+          "frame_index": 99,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000100.png"
+        },
+        {
+          "frame_index": 100,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000101.png"
+        },
+        {
+          "frame_index": 101,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000102.png"
+        },
+        {
+          "frame_index": 102,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000103.png"
+        },
+        {
+          "frame_index": 103,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000104.png"
+        },
+        {
+          "frame_index": 104,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000105.png"
+        },
+        {
+          "frame_index": 105,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000106.png"
+        },
+        {
+          "frame_index": 106,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000107.png"
+        },
+        {
+          "frame_index": 107,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000108.png"
+        },
+        {
+          "frame_index": 108,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000109.png"
+        },
+        {
+          "frame_index": 109,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000110.png"
+        },
+        {
+          "frame_index": 110,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000111.png"
+        },
+        {
+          "frame_index": 111,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000112.png"
+        },
+        {
+          "frame_index": 112,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000113.png"
+        },
+        {
+          "frame_index": 113,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000114.png"
+        },
+        {
+          "frame_index": 114,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000115.png"
+        },
+        {
+          "frame_index": 115,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000116.png"
+        },
+        {
+          "frame_index": 116,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000117.png"
+        },
+        {
+          "frame_index": 117,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000118.png"
+        },
+        {
+          "frame_index": 118,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000119.png"
+        },
+        {
+          "frame_index": 119,
+          "status": "VERIFIED RECOVERY",
+          "method": "ORIGINAL_FRAME_PRESERVED",
+          "output": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250\\frames\\frame_000120.png"
+        }
+      ],
+      "classification": "PLAUSIBLE RECONSTRUCTION",
+      "forensic_warning": "Reconstructed frames are not verified original data."
+    },
+    "recovered_video": {
+      "success": true,
+      "output_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250_recovered.mp4",
+      "frame_count": 120,
+      "fps": 24.0,
+      "size_bytes": 294031,
+      "duration_seconds": 5.0,
+      "classification": "PLAUSIBLE RECONSTRUCTION",
+      "forensic_status": "RECONSTRUCTED — NOT VERIFIED ORIGINAL DATA",
+      "output_validation": {
+        "filename": "d968bd49b250_recovered.mp4",
+        "path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\recovered\\d968bd49b250_recovered.mp4",
+        "container": "mov,mp4,m4a,3gp,3g2,mj2",
+        "size_bytes": 294031,
+        "duration_seconds": 5.0,
+        "width": 640,
+        "height": 360,
+        "fps": 24.0,
+        "frame_count": 120,
+        "video_codec": "h264",
+        "pixel_format": "yuv420p",
+        "audio_present": false,
+        "audio_codec": null,
+        "probe_ok": true
+      },
+      "frontend_url": "/api/video-reconstruction/d968bd49b250/recovered",
+      "available": true
+    },
+    "statistics": {
+      "total_frames": 120,
+      "damaged_frames": 16,
+      "reconstructed_frames": 16,
+      "verified_frames": 104,
+      "failed_frames": 0,
+      "missing_frames": 0,
+      "frame_completeness": 1.0,
+      "recovery_confidence": 0.95
+    },
+    "forensic_classification": "CONTROLLED BENCHMARK RECONSTRUCTION",
+    "forensic_warning": "These damaged-frame indices are controlled benchmark ground truth and must not be represented as independently inferred forensic findings.",
+    "report_path": "C:\\Users\\user\\Downloads\\RecoverAI\\data\\video_recovery\\reports\\d968bd49b250_video_reconstruction.json"
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "source_file": "storage\\evidence\\051702c7-4574-4d92-a212-84d1236e3e1e\\ceefb980-de63-4232-980f-ce3887cb8e9b_Mr (1).pdf",
+    "damaged_file": "..\\data\\benchmark\\damaged\\Mr (1)_damaged.pdf",
+    "original_size": 192071,
+    "damaged_size": 187975,
+    "damage_start": 90000,
+    "damage_end": 94096,
+    "damage_size": 4096,
+    "original_sha256": "ba19d33b46523485e262873512ef99475f7e5cfef91ba4e8a8b2c612c627f3a0",
+    "damaged_sha256": "3c7456eaaa2f4668e72c4d93b52220fa72fc6f782a04fb7128da63095a67b33e",
+    "damage_type": "BYTE_RANGE_REMOVAL"
+}

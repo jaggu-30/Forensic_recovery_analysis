@@ -1,0 +1,48 @@
+.relationship-graph {
+  height: 500px;
+  overflow: hidden;
+  border: 1px solid #142b3f;
+  border-radius: 8px;
+  background: #050d17;
+}
+
+.fragment-node {
+  display: grid;
+  gap: 4px;
+  padding: 10px 11px;
+}
+
+.fragment-node b { color: #67e8f9; font-size: 10px; }
+.fragment-node span { color: #b9c8d8; font-size: 9px; }
+.fragment-node small { color: #71869c; font-size: 8px; }
+
+.graph-subtitle {
+  display: block;
+  margin-top: 4px;
+  color: #71869c;
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.relationship-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 13px;
+  color: #8da0b7;
+  font-size: 10px;
+}
+
+.relationship-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.relationship-legend i { width: 18px; height: 2px; display: inline-block; }
+.relationship-legend .adjacent { background: #38bdf8; }
+.relationship-legend .nearby { background: #f59e0b; }
+.relationship-legend .candidate { background: #64748b; }
+
+.selected-fragment-details .fragment-id { display: block; color: #67e8f9; font-size: 17px; }
+
+.relationship-support-list { display: grid; gap: 10px; }
+.relationship-support-list > div { padding-bottom: 10px; border-bottom: 1px solid #17283b; }
+.relationship-support-list > div:last-child { border-bottom: 0; }
+.relationship-support-list b { display: block; color: #dce8f5; font-size: 10px; }
+.relationship-support-list span { display: block; margin-top: 5px; color: #71869c; font-size: 9px; line-height: 1.5; }

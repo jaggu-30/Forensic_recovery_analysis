@@ -1,0 +1,20 @@
+{
+  "type": "RECOVERAI controlled visual-corruption benchmark",
+  "video": "recoverai_corrupted_cat_5s_valid.mp4",
+  "duration_seconds": 5,
+  "fps": 24,
+  "frame_count": 120,
+  "corruption": [
+    {
+      "start_frame": 42,
+      "end_frame": 55,
+      "damage_type": "BLOCK_GLITCH"
+    },
+    {
+      "start_frame": 78,
+      "end_frame": 91,
+      "damage_type": "NOISE_BAND"
+    }
+  ],
+  "note": "MP4 container remains valid; corruption is visual/content-level for safe FFprobe analysis. Ground truth is benchmark metadata and must not be presented as independently inferred forensic evidence."
+}

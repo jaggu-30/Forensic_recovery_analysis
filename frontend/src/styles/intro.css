@@ -563,7 +563,7 @@
    MINI PROGRESS
    ========================================================= */
 
-.mini-bar {
+.intro-status .mini-bar {
   width: 100%;
   height: 4px;
 
@@ -574,7 +574,7 @@
   overflow: hidden;
 }
 
-.mini-bar i {
+.intro-status .mini-bar i {
   display: block;
 
   height: 100%;
